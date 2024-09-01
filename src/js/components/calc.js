@@ -3,7 +3,7 @@ const prices = {
   '3D' : 450,
   'docs' : 300,
   'material' : 150,
-  "author" : 1000
+  "observer" : 1000
 }
 
 const inputCalc = document.querySelector('.calc-cost__number')
@@ -22,6 +22,7 @@ if(inputCalc){
   const squareContainer = document.querySelector('[data-calc="square"]').querySelector('.calc-cost__price>span')
   const totalContainer = document.querySelector('.calc-cost__result').querySelector('.calc-cost__price>span')
 
+  const calcItems = document.querySelectorAll('.calc-cost__service')
 
   const checkValue = (input) => {
     if (inputValue > max) {
@@ -46,13 +47,7 @@ if(inputCalc){
     checkValue(input)
   }
 
-  const showItem = (price, type) => {
-    const current = document.querySelector(`[data-calc="${type}"]`)
-    const currentPrice = current.querySelector('.calc-cost__price>span')
-    currentPrice.textContent = price
 
-    current.classList.add('visible')
-  }
 
   const calcPriceItem = (selector, square) => {
     return prices[selector] * square;
@@ -69,6 +64,22 @@ if(inputCalc){
   const setSquare = (value) => {
     squareContainer.textContent = value
   }
+  function numberWithSpaces(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  }
+  const setTotal = (value) => {
+    value = calcTotal(value)
+    totalContainer.textContent = numberWithSpaces(value)
+  }
+  const reculcItems = () => {
+    calcItems.forEach(item => {
+      const itemType = item.dataset.calc
+      const priceContainer = item.querySelector('.calc-cost__price>span')
+
+      priceContainer.textContent = calcPriceItem(itemType, inputValue)
+
+    })
+  }
 
 
 
@@ -76,21 +87,23 @@ if(inputCalc){
     inputValue = +inp.value;
     checkValue(e.currentTarget)
     setSquare(inputValue)
+    reculcItems()
+    setTotal(inputValue)
   })
 
   btnMinus.addEventListener('click', e => {
     minusSquare(inp)
     setSquare(inp.value)
+    reculcItems()
+    setTotal(inputValue)
   })
 
   btnPlus.addEventListener('click', e => {
     plusSquare(inp)
     setSquare(inp.value)
+    reculcItems()
+    setTotal(inputValue)
   })
 
-  function numberWithSpaces(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-  }
-
-  totalContainer.textContent = numberWithSpaces(calcTotal(inputValue))
+  setTotal(inputValue)
 }

@@ -73,9 +73,9 @@
     max-width: 62rem;
     padding: 4rem;
     background: #ded8ca;
-
-
   }
+
+
 
   &__body {
     display: grid;
@@ -111,6 +111,13 @@
     font-weight: 400;
     font-size: 2rem;
     color: var(--grey1000);
+  }
+
+
+  &__service {
+    &.hide {
+      display: none;
+    }
   }
 }
 

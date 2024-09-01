@@ -1954,6 +1954,9 @@ a {
   font-size: 2rem;
   color: var(--grey1000);
 }
+.calc-cost__service.hide {
+  display: none;
+}
 
 .calc-radio {
   display: -webkit-box;

@@ -1,9 +1,24 @@
 const prices = {
-  'plan' : 500,
-  '3D' : 450,
-  'docs' : 300,
-  'material' : 150,
-  "observer" : 1000
+  'plan' : {
+    price: 500,
+    active: true
+  },
+  '3D' : {
+    price: 450,
+    active: true,
+  },
+  'docs' : {
+    price: 300,
+    active: true,
+  },
+  'material' : {
+    price: 150,
+    active: true,
+  },
+  "observer" : {
+    price: 1000,
+    active: true,
+  }
 }
 
 const inputCalc = document.querySelector('.calc-cost__number')
@@ -23,6 +38,26 @@ if(inputCalc){
   const totalContainer = document.querySelector('.calc-cost__result').querySelector('.calc-cost__price>span')
 
   const calcItems = document.querySelectorAll('.calc-cost__service')
+
+  const calcChecboxes = document.querySelectorAll('.calc-radio__radio')
+
+
+  const initChecks = () => {
+    calcChecboxes.forEach(check => {
+      const checkVal = check.value
+      check.addEventListener('change', e => {
+        if(e.currentTarget.checked){
+          toggleEl(checkVal, false)
+        } else {
+          toggleEl(checkVal, true)
+        }
+
+        prices[checkVal].active = e.currentTarget.checked
+
+        setTotal(inputValue)
+      })
+    })
+  }
 
   const checkValue = (input) => {
     if (inputValue > max) {
@@ -47,15 +82,23 @@ if(inputCalc){
     checkValue(input)
   }
 
-
+  const toggleEl = (selector, flag) => {
+    const el = document.querySelector(`[data-calc="${selector}"]`)
+    if(flag){
+      el.classList.add('hide')
+    } else {
+      el.classList.remove('hide')
+    }
+  }
 
   const calcPriceItem = (selector, square) => {
-    return prices[selector] * square;
+    return prices[selector].price * square;
   }
   const calcTotal = (square) => {
     let S = 0;
     for(let i = 0; i < Object.keys(prices).length; i++){
-      S += square * Object.values(prices)[i]
+      const itr = Object.values(prices)[i]
+      S += itr.active ? square * itr.price : 0
     }
 
     return S;
@@ -104,6 +147,6 @@ if(inputCalc){
     reculcItems()
     setTotal(inputValue)
   })
-
+  initChecks()
   setTotal(inputValue)
 }

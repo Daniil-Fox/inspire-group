@@ -618,9 +618,9 @@
           <div class="calc-cost__sq title4">Общая площадь объекта, м2</div>
 
           <div class="calc-cost__number">
-            <button class="btn-reset">-</button>
-            <input type="number" min="0" value="100" />
-            <button class="btn-reset">+</button>
+            <button class="btn-reset minus">-</button>
+            <input type="number" min="1" max="1000" value="100" />
+            <button class="btn-reset plus">+</button>
           </div>
         </div>
 
@@ -644,7 +644,7 @@
               type="checkbox"
               name="service"
               class="visually-hidden calc-radio__radio"
-              value="docum"
+              value="docs"
             />
             <div class="calc-radio__box"></div>
             <div class="calc-radio__name text">Рабочая документация</div>
@@ -698,27 +698,27 @@
             </div>
           </div>
 
-          <div class="calc-cost__service">
+          <div class="calc-cost__service" data-calc="square">
             <div class="calc-cost__caption">Площадь объекта</div>
             <div class="calc-cost__price"><span>100</span> м<sup>2</sup></div>
           </div>
-          <div class="calc-cost__service">
+          <div class="calc-cost__service" data-calc="plan">
             <div class="calc-cost__caption">Планировочные решения</div>
             <div class="calc-cost__price"><span>50 000</span> руб.</div>
           </div>
-          <div class="calc-cost__service">
+          <div class="calc-cost__service" data-calc="docs">
             <div class="calc-cost__caption">Рабочая документация</div>
             <div class="calc-cost__price"><span>30 000</span> руб.</div>
           </div>
-          <div class="calc-cost__service">
+          <div class="calc-cost__service" data-calc="3D">
             <div class="calc-cost__caption">3D визуализация</div>
             <div class="calc-cost__price"><span>45 000</span> руб.</div>
           </div>
-          <div class="calc-cost__service">
+          <div class="calc-cost__service" data-calc="material">
             <div class="calc-cost__caption">Комплектация материалами</div>
             <div class="calc-cost__price"><span>15 000</span> руб.</div>
           </div>
-          <div class="calc-cost__service">
+          <div class="calc-cost__service" data-calc="observer">
             <div class="calc-cost__caption">Авторский надзор</div>
             <div class="calc-cost__price"><span>100 000</span> руб.</div>
           </div>

@@ -1987,4 +1987,21 @@ a {
 }
 .calc-radio__radio:checked + .calc-radio__box::after {
   opacity: 1;
+}
+
+.calc-c {
+  padding: 12rem 0;
+  background: var(--grey300);
+}
+.calc-c__title {
+  margin-bottom: 2rem;
+}
+.calc-c__desc:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.calc-c__capture:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.calc-c__list:not(:last-child) {
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */

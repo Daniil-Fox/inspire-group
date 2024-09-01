@@ -1908,6 +1908,52 @@ a {
 .calc-cost__label:not(:last-child) {
   margin-bottom: 2rem;
 }
+.calc-cost__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.calc-cost__total {
+  width: 100%;
+  max-width: 62rem;
+  padding: 4rem;
+  background: #ded8ca;
+}
+.calc-cost__body {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 10rem;
+}
+.calc-cost__body:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.calc-cost__caption {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--grey1000);
+}
+.calc-cost__result .calc-cost__caption {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.calc-cost__result .calc-cost__price {
+  font-size: 3.2rem;
+}
+.calc-cost__price {
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--grey1000);
+}
 
 .calc-radio {
   display: -webkit-box;

@@ -62,6 +62,56 @@
       margin-bottom: 2rem;
     }
   }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__total {
+    width: 100%;
+    max-width: 62rem;
+    padding: 4rem;
+    background: #ded8ca;
+
+
+  }
+
+  &__body {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 10rem;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__caption {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--grey1000);
+  }
+
+  &__result {
+    .calc-cost__caption {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .calc-cost__price {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__price {
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--grey1000);
+  }
 }
 
 

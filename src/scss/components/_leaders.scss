@@ -1,0 +1,33 @@
+.leaders {
+  padding: 12rem 0;
+  background: var(--grey300);
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 58rem;
+    grid-auto-rows: 58rem;
+    gap: 4rem;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__name {
+    margin-bottom: 0.4rem;
+  }
+
+  &__about {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: var(--grey300);
+    padding-top: 1.7rem;
+  }
+}

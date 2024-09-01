@@ -1,0 +1,22 @@
+.project-ph {
+  padding-bottom: 12rem;
+
+  &__row {
+    display: flex;
+    gap: 4rem;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__img {
+    flex: 1;
+    height: 90rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

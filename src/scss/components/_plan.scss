@@ -1,0 +1,52 @@
+.plan {
+  padding: 12rem 0;
+  background: #edebdd;
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    counter-reset: count 0;
+  }
+
+  &__item {
+    counter-increment: count;
+    position: relative;
+
+    &::before {
+      content: counter(count);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #edebdd;
+      padding: 3.5rem 1.5rem;
+      font-weight: 400;
+      font-size: 3.6rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--grey1000);
+    }
+  }
+}
+
+.plan-item {
+  text-align: center;
+  padding: 5.4rem 4.5rem;
+  border: 1px solid var(--red1000);
+
+
+  &__capture {
+    margin-bottom: 2rem;
+  }
+}

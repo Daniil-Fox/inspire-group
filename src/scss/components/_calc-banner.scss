@@ -1,0 +1,33 @@
+.calc-banner {
+  padding: 12rem 0;
+  background: var(--grey300);
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    &:not(:last-child) {
+      margin-bottom: 7.5rem;
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+  }
+
+  &__title {
+    span {
+      display: block;
+      text-align: right;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--grey1000);
+  }
+}

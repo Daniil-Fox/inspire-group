@@ -1,0 +1,50 @@
+.price-plan {
+  padding: 12rem 0;
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__content {
+    padding: 5rem;
+    background: #ded8cb;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  &__left {
+    ul {
+      li {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: rgba(70, 67, 48, 0.5);
+        line-height: 140%;
+
+        &.active {
+          color: var(--grey1000);
+        }
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__price {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  &__desc {
+    color: var(--red1000);
+  }
+}

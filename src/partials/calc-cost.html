@@ -1,0 +1,120 @@
+<section class="calc-cost">
+  <div class="container">
+    <h4 class="subtitle calc-cost__subtitle">расчет стоимости</h4>
+    <h2 class="title2 calc-cost__title">
+      Рассчитайте стоимость дизайн-проекта интерьера
+    </h2>
+
+    <div class="calc-cost__container">
+      <div class="calc-cost__calculate">
+        <div class="calc-cost__block">
+          <div class="calc-cost__sq title4">Общая площадь объекта, м2</div>
+
+          <div class="calc-cost__number">
+            <button class="btn-reset">-</button>
+            <input type="number" min="0" value="100" />
+            <button class="btn-reset">+</button>
+          </div>
+        </div>
+
+        <div class="calc-cost__block">
+          <div class="calc-cost__sq title4">Какие услуги Вам нужны?</div>
+
+          <label class="calc-cost__label calc-radio">
+            <input
+              checked
+              type="checkbox"
+              name="service"
+              class="visually-hidden calc-radio__radio"
+              value="plan"
+            />
+            <div class="calc-radio__box"></div>
+            <div class="calc-radio__name text">Планировочные решения</div>
+          </label>
+          <label class="calc-cost__label calc-radio">
+            <input
+              checked
+              type="checkbox"
+              name="service"
+              class="visually-hidden calc-radio__radio"
+              value="docum"
+            />
+            <div class="calc-radio__box"></div>
+            <div class="calc-radio__name text">Рабочая документация</div>
+          </label>
+          <label class="calc-cost__label calc-radio">
+            <input
+              checked
+              type="checkbox"
+              name="service"
+              class="visually-hidden calc-radio__radio"
+              value="3D"
+            />
+            <div class="calc-radio__box"></div>
+            <div class="calc-radio__name text">3D визуализация</div>
+          </label>
+          <label class="calc-cost__label calc-radio">
+            <input
+              checked
+              type="checkbox"
+              name="service"
+              class="visually-hidden calc-radio__radio"
+              value="material"
+            />
+            <div class="calc-radio__box"></div>
+            <div class="calc-radio__name text">Комплектация материалами</div>
+          </label>
+          <label class="calc-cost__label calc-radio">
+            <input
+              checked
+              type="checkbox"
+              name="service"
+              class="visually-hidden calc-radio__radio"
+              value="observer"
+            />
+            <div class="calc-radio__box"></div>
+            <div class="calc-radio__name text">Авторский надзор</div>
+          </label>
+        </div>
+      </div>
+
+      <div class="calc-cost__total">
+        <div class="calc-cost__result">
+          <div class="calc-cost__caption">Итоговая стоимость</div>
+          <div class="calc-cost__price"><span>240 000</span> руб.</div>
+        </div>
+        <div class="calc-cost__plan">
+          <div class="calc-cost__caption">Тариф “Оптимальный”</div>
+          <div class="calc-cost__price">
+            <span>1600</span> руб/м<sup>2</sup>
+          </div>
+        </div>
+
+        <div class="calc-cost__service">
+          <div class="calc-cost__caption">Площадь объекта</div>
+          <div class="calc-cost__price"><span>100</span> м<sup>2</sup></div>
+        </div>
+        <div class="calc-cost__service">
+          <div class="calc-cost__caption">Планировочные решения</div>
+          <div class="calc-cost__price"><span>50 000</span> руб.</div>
+        </div>
+        <div class="calc-cost__service">
+          <div class="calc-cost__caption">Рабочая документация</div>
+          <div class="calc-cost__price"><span>30 000</span>30 000 руб.</div>
+        </div>
+        <div class="calc-cost__service">
+          <div class="calc-cost__caption">3D визуализация</div>
+          <div class="calc-cost__price"><span>45 000</span> руб.</div>
+        </div>
+        <div class="calc-cost__service">
+          <div class="calc-cost__caption">Комплектация материалами</div>
+          <div class="calc-cost__price"><span>15 000</span> руб.</div>
+        </div>
+        <div class="calc-cost__service">
+          <div class="calc-cost__caption">Авторский надзор</div>
+          <div class="calc-cost__price"><span>100 000</span> руб.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

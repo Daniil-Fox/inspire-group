@@ -1,0 +1,41 @@
+.calc {
+  padding: 12rem 0;
+
+  &__container {
+    padding-right: calc((100% - var(--container-width)) / 2);
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__image {
+    width: 55%;
+    height: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 58rem;
+  }
+
+  &__title {
+    text-align: right;
+    margin-bottom: 2rem;
+    padding-right: 2.6rem;
+
+    span {
+      display: block;
+      text-align: right;
+      margin-right: -2.6rem;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 5rem;
+  }
+}

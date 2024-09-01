@@ -1,0 +1,41 @@
+// ваш код
+.header {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 20px 0;
+  background-color: var(--grey300);
+  transition: background-color .3s ease-out;
+
+  &.scroll {
+    background-color: rgba(#dbd5c6, 0.7);
+    backdrop-filter: blur(0.625rem);
+  }
+
+  &__logo {
+    width: 18rem;
+    height: 4rem;
+    mix-blend-mode: exclusion;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__soc {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__tel {
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--grey1000);
+  }
+}

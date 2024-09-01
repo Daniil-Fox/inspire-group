@@ -1,0 +1,15 @@
+:root {
+  --font-family: "Arial", sans-serif;
+  --second-family: "Manrope", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --content-width: 120rem;
+  --container-offset: 1.5rem;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --light1000: #ebe5d7;
+  --red1000: #90604c;
+  --grey1000: #464330;
+  --grey500: #989483;
+  --grey400: #cfc8b8;
+  --grey300: #dbd5c6;
+}

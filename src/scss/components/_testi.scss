@@ -1,0 +1,94 @@
+.testi {
+  padding: 12rem 0;
+  background: var(--grey300);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__slider,
+  &__thumbs,
+  &__right {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  &__slider {
+    margin-bottom: 2rem;
+
+  }
+
+  &__control {
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__pagination {
+    position: static;
+    width: auto !important;
+
+    .swiper-pagination-bullet {
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: var(--red1000);
+    }
+  }
+
+  &__comment {
+    position: relative;
+    padding-left: 4rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 6.3rem;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2.4rem;
+      height: 2.4rem;
+      background-image: url('./../img/quote.svg');
+      background-size: 1.7rem 1.3rem;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      left: 0;
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__author {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--grey1000);
+  }
+
+  &__slide {
+    box-sizing: border-box;
+    height: auto;
+    max-height: 37.5rem;
+
+    img,
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    img {
+      pointer-events: none;
+    }
+  }
+}

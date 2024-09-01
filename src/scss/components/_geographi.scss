@@ -1,0 +1,18 @@
+.geographi {
+  padding: 12rem 0;
+  background: #edebdd;
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__map {
+    width: 100%;
+    height: auto;
+
+    svg,
+    img {
+      width: 100%;
+    }
+  }
+}

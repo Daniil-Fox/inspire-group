@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>InspireGroup</title>
+  <link
+    rel="preload"
+    href="fonts/Inter-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Inter-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Manrope-Light.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Manrope-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Manrope-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Manrope-SemiBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header">
+  <div class="container">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <img src="./img/logo.png" alt="" />
+      </a>
+
+      <nav class="header__nav nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="./" class="nav__link">главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="./portfolio.html" class="nav__link">наши проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="./price.html" class="nav__link">цены</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">видео</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">блог</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__soc">
+        <a href="tel:+74994993231" class="header__tel">+7 499 499-32-31</a>
+
+        <a href="#" class="header__link">
+          <svg
+            width="21"
+            height="17"
+            viewBox="0 0 21 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 1L1 8.5L8 9.5M20 1L17.5 16L8 9.5M20 1L8 9.5M8 9.5V15L11.249 11.723"
+              stroke="#464330"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+
+        <a href="#" class="header__link">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.0012 2.90757C16.0845 1.98194 14.9926 1.24813 13.7893 0.748936C12.586 0.249746 11.2953 -0.00482603 9.9925 6.92813e-05C4.53375 6.92813e-05 0.085 4.44757 0.08 9.90757C0.08 11.6563 0.5375 13.3576 1.40125 14.8638L0 20.0001L5.255 18.6226C6.70811 19.4154 8.33719 19.8302 9.9925 19.8288H9.9975C15.4575 19.8288 19.905 15.3813 19.91 9.91632C19.9111 8.61389 19.6546 7.32411 19.1551 6.12125C18.6557 4.91838 17.9245 3.82619 17.0012 2.90757ZM9.9925 18.1513C8.51647 18.1502 7.06778 17.753 5.7975 17.0013L5.4975 16.8213L2.38 17.6388L3.2125 14.5976L3.0175 14.2838C2.19226 12.9717 1.75581 11.4526 1.75875 9.90257C1.75875 5.37007 5.455 1.67257 9.9975 1.67257C11.0797 1.67063 12.1515 1.88291 13.1513 2.29718C14.151 2.71145 15.0589 3.31952 15.8225 4.08632C16.5886 4.85025 17.196 5.75825 17.6096 6.75798C18.0232 7.75771 18.2349 8.8294 18.2325 9.91132C18.2275 14.4601 14.5312 18.1513 9.9925 18.1513ZM14.5112 11.9838C14.265 11.8601 13.0487 11.2613 12.82 11.1763C12.5925 11.0951 12.4262 11.0526 12.2637 11.3001C12.0975 11.5463 11.6225 12.1076 11.48 12.2688C11.3375 12.4351 11.19 12.4538 10.9425 12.3313C10.6962 12.2063 9.8975 11.9463 8.9525 11.1001C8.215 10.4438 7.72125 9.63132 7.57375 9.38507C7.43125 9.13757 7.56 9.00507 7.68375 8.88132C7.7925 8.77132 7.93 8.59132 8.05375 8.44882C8.17875 8.30632 8.22 8.20132 8.30125 8.03632C8.3825 7.86882 8.34375 7.72632 8.2825 7.60257C8.22 7.47882 7.72625 6.25757 7.5175 5.76507C7.3175 5.27882 7.11375 5.34632 6.96125 5.34007C6.81875 5.33132 6.6525 5.33132 6.48625 5.33132C6.36072 5.33451 6.2372 5.36358 6.12342 5.41671C6.00963 5.46984 5.90804 5.54588 5.825 5.64007C5.5975 5.88757 4.96125 6.48632 4.96125 7.70757C4.96125 8.92882 5.84875 10.1026 5.97375 10.2688C6.09625 10.4351 7.71625 12.9338 10.2025 14.0088C10.79 14.2651 11.2525 14.4163 11.6137 14.5313C12.2075 14.7213 12.7437 14.6926 13.1712 14.6313C13.6462 14.5588 14.635 14.0313 14.8437 13.4526C15.0487 12.8726 15.0487 12.3776 14.9862 12.2738C14.925 12.1688 14.7587 12.1076 14.5112 11.9838Z"
+              fill="#464330"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <section class="price-hero">
+  <div class="container">
+    <h2 class="title2 centered price-hero__title">
+      Стоимость услуг компании InspireGroup
+    </h2>
+
+    <div class="prices__tables">
+      <div class="prices__table p-table">
+        <div class="p-table__capture title4 centered">Коммерческие объекты</div>
+        <ul class="list-reset p-table__list">
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Дизайн-проект</div>
+
+              <div class="p-table__cost text">от 3000 руб/м2</div>
+              <div class="p-table__time text">от 45 дней</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn>
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Авторский надзор</div>
+
+              <div class="p-table__cost text">1000 руб/м2</div>
+              <div class="p-table__time text">в месяц</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn>
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Планировочное решение</div>
+
+              <div class="p-table__cost text">500 руб/м2</div>
+              <div class="p-table__time text">в месяц</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn="">
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Дизайн-экспресс</div>
+              <div class="p-table__cost text">1000 руб/м2</div>
+              <div class="p-table__time text">от 5 дней</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn>
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="prices__table p-table">
+        <div class="p-table__capture title4 centered">Коммерческие объекты</div>
+        <ul class="list-reset p-table__list">
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Дизайн-проект</div>
+
+              <div class="p-table__cost text">от 3000 руб/м2</div>
+              <div class="p-table__time text">от 45 дней</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn>
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Авторский надзор</div>
+
+              <div class="p-table__cost text">1000 руб/м2</div>
+              <div class="p-table__time text">в месяц</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn>
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Планировочное решение</div>
+
+              <div class="p-table__cost text">500 руб/м2</div>
+              <div class="p-table__time text">в месяц</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn="">
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Дизайн-экспресс</div>
+              <div class="p-table__cost text">1000 руб/м2</div>
+              <div class="p-table__time text">от 5 дней</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn>
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="price-proj">
+  <div class="container">
+    <h4 class="subtitle price-proj__subtitle">цены</h4>
+    <h2 class="price-proj__title title2">Стоимость на проектные работы</h2>
+
+    <ul class="list-reset p-table__list">
+      <li class="p-table__item price-proj__item">
+        <div class="p-table__header">
+          <div class="p-table__name title4">Разработка дизайна</div>
+
+          <div class="p-table__cost text">от 1000 руб/м2</div>
+        </div>
+      </li>
+      <li class="p-table__item price-proj__item">
+        <div class="p-table__header">
+          <div class="p-table__name title4">
+            Воплощение дизайна (строительные и ремонтные работы)
+          </div>
+
+          <div class="p-table__cost text">от 1000 руб/м2</div>
+        </div>
+      </li>
+      <li class="p-table__item price-proj__item">
+        <div class="p-table__header">
+          <div class="p-table__name title4">
+            Оснащение помещения техническими средствами
+          </div>
+
+          <div class="p-table__cost text">от 2500 руб/м2</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="price-plan">
+  <div class="container">
+    <h4 class="price-plan__subtitle subtitle">тарифы</h4>
+    <h2 class="price-plan__title title2">
+      Предлагаем три тарифа<br />на разработку проектной документации
+    </h2>
+
+    <div class="price-plan__tabs portfolio__tabs">
+      <div class="price-plan__tab portfolio__tab active" data-tab="planirovka">
+        тариф «Планировка»
+      </div>
+      <div class="price-plan__tab portfolio__tab" data-tab="optimal">
+        тариф «оптимальный»
+      </div>
+      <div class="price-plan__tab portfolio__tab" data-tab="fullproj">
+        тариф «полный проект»
+      </div>
+    </div>
+
+    <div
+      class="portfolio__content price-plan__content active"
+      data-tab-content="planirovka"
+    >
+      <h4 class="title4 price-plan__capture">
+        Состав документации дизайн-проекта по тарифу:
+      </h4>
+
+      <div class="price-plan__body">
+        <div class="price-plan__left">
+          <ul>
+            <li class="active">Эскизы планировочных планов помещений</li>
+            <li class="active">Итоговая планировка помещений с экспликацией</li>
+            <li class="active">Планы покрытия полов, устройства потолков</li>
+            <li>Итоговая планировка. План монтажа и демонтажа стен</li>
+            <li>План электроснабжения: слаботочные сети и розетки</li>
+            <li>План отопления: радиаторы и теплые полы</li>
+            <li>План вентиляции помещений</li>
+            <li>План освещения помещений</li>
+            <li>План расстановки мебели в помещениях</li>
+            <li>Планы монтажа и демонтажа перегородок</li>
+            <li>План сантехнической разводки и приборов</li>
+            <li>Ведомости отделочных материалов и мебели</li>
+            <li>Трехмерная визуализация интерьера</li>
+            <li>Подбор и расчет отделочных материалов</li>
+          </ul>
+        </div>
+
+        <div class="price-plan__right">
+          <p class="text price-plan__desc">
+            Минимальный набор документации, который позволяет четко понимать
+            концепцию отделки: планировку и назначения помещений, расстановку
+            мебели, покрытия потолков и полов. Технические нюансы отделки и
+            устройства инженерных систем в документации не освещены. Набор
+            документации подходит для производства косметического ремонта или
+            перепланировки.
+          </p>
+
+          <div class="price-plan__bottom">
+            <span class="price-plan__price title5"
+              >От 700 руб/м<sup>2</sup></span
+            >
+            <a href="#" class="btn btn--trans btn-reset price-plan__btn">
+              подробнее о тарифе
+
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.51576 13.542C7.45561 13.6057 7.40859 13.6806 7.37738 13.7624C7.34617 13.8442 7.33138 13.9314 7.33386 14.0189C7.33633 14.1064 7.35603 14.1926 7.39181 14.2725C7.4276 14.3525 7.47878 14.4246 7.54242 14.4847C7.60607 14.5448 7.68094 14.5919 7.76276 14.6231C7.84458 14.6543 7.93174 14.6691 8.01928 14.6666C8.10681 14.6641 8.193 14.6444 8.27293 14.6086C8.35285 14.5729 8.42494 14.5217 8.48509 14.458L14.1518 8.45804C14.2688 8.33426 14.334 8.17038 14.334 8.00004C14.334 7.8297 14.2688 7.66582 14.1518 7.54204L8.48509 1.54137C8.42534 1.47633 8.35326 1.42381 8.27305 1.38686C8.19283 1.34991 8.10607 1.32927 8.01781 1.32613C7.92954 1.323 7.84154 1.33743 7.7589 1.36859C7.67626 1.39976 7.60064 1.44703 7.53643 1.50767C7.47221 1.5683 7.42069 1.64109 7.38484 1.72181C7.349 1.80253 7.32955 1.88957 7.32763 1.97786C7.3257 2.06616 7.34134 2.15396 7.37364 2.23616C7.40594 2.31836 7.45424 2.39333 7.51576 2.4567L12.7504 8.00004L7.51576 13.542Z"
+                  fill="#464330"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="portfolio__content price-plan__content"
+      data-tab-content="optimal"
+    >
+      <h4 class="title4 price-plan__capture">
+        Состав документации дизайн-проекта по тарифу:
+      </h4>
+
+      <div class="price-plan__body">
+        <div class="price-plan__left">
+          <ul>
+            <li class="active">Эскизы планировочных планов помещений</li>
+            <li class="active">Итоговая планировка помещений с экспликацией</li>
+            <li class="active">Планы покрытия полов, устройства потолков</li>
+            <li class="active">
+              Итоговая планировка. План монтажа и демонтажа стен
+            </li>
+            <li class="active">
+              План электроснабжения: слаботочные сети и розетки
+            </li>
+            <li class="active">План отопления: радиаторы и теплые полы</li>
+            <li class="active">План вентиляции помещений</li>
+            <li class="active">План освещения помещений</li>
+            <li class="active">План расстановки мебели в помещениях</li>
+            <li class="active">Планы монтажа и демонтажа перегородок</li>
+            <li class="active">План сантехнической разводки и приборов</li>
+            <li>Ведомости отделочных материалов и мебели</li>
+            <li>Трехмерная визуализация интерьера</li>
+            <li>Подбор и расчет отделочных материалов</li>
+          </ul>
+        </div>
+
+        <div class="price-plan__right">
+          <p class="text price-plan__desc">
+            Набор технической документации, описывающий все аспекты ремонта.
+            Помимо планировочных решений и экспликаций, включает детальные планы
+            всех инженерных систем (электромонтажа, отопления, водоснабжения,
+            вентиляции), а также описание применяемых технологий отделки. По
+            данному набору документации возможно производство отделки с ноля.
+          </p>
+
+          <div class="price-plan__bottom">
+            <span class="price-plan__price title5"
+              >От 1600 руб/м<sup>2</sup></span
+            >
+            <a href="#" class="btn btn--trans btn-reset price-plan__btn">
+              подробнее о тарифе
+
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.51576 13.542C7.45561 13.6057 7.40859 13.6806 7.37738 13.7624C7.34617 13.8442 7.33138 13.9314 7.33386 14.0189C7.33633 14.1064 7.35603 14.1926 7.39181 14.2725C7.4276 14.3525 7.47878 14.4246 7.54242 14.4847C7.60607 14.5448 7.68094 14.5919 7.76276 14.6231C7.84458 14.6543 7.93174 14.6691 8.01928 14.6666C8.10681 14.6641 8.193 14.6444 8.27293 14.6086C8.35285 14.5729 8.42494 14.5217 8.48509 14.458L14.1518 8.45804C14.2688 8.33426 14.334 8.17038 14.334 8.00004C14.334 7.8297 14.2688 7.66582 14.1518 7.54204L8.48509 1.54137C8.42534 1.47633 8.35326 1.42381 8.27305 1.38686C8.19283 1.34991 8.10607 1.32927 8.01781 1.32613C7.92954 1.323 7.84154 1.33743 7.7589 1.36859C7.67626 1.39976 7.60064 1.44703 7.53643 1.50767C7.47221 1.5683 7.42069 1.64109 7.38484 1.72181C7.349 1.80253 7.32955 1.88957 7.32763 1.97786C7.3257 2.06616 7.34134 2.15396 7.37364 2.23616C7.40594 2.31836 7.45424 2.39333 7.51576 2.4567L12.7504 8.00004L7.51576 13.542Z"
+                  fill="#464330"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="portfolio__content price-plan__content"
+      data-tab-content="fullproj"
+    >
+      <h4 class="title4 price-plan__capture">
+        Состав документации дизайн-проекта по тарифу:
+      </h4>
+
+      <div class="price-plan__body">
+        <div class="price-plan__left">
+          <ul>
+            <li class="active">Эскизы планировочных планов помещений</li>
+            <li class="active">Итоговая планировка помещений с экспликацией</li>
+            <li class="active">Планы покрытия полов, устройства потолков</li>
+            <li class="active">
+              Итоговая планировка. План монтажа и демонтажа стен
+            </li>
+            <li class="active">
+              План электроснабжения: слаботочные сети и розетки
+            </li>
+            <li class="active">План отопления: радиаторы и теплые полы</li>
+            <li class="active">План вентиляции помещений</li>
+            <li class="active">План освещения помещений</li>
+            <li class="active">План расстановки мебели в помещениях</li>
+            <li class="active">Планы монтажа и демонтажа перегородок</li>
+            <li class="active">План сантехнической разводки и приборов</li>
+            <li class="active">Ведомости отделочных материалов и мебели</li>
+            <li class="active">Трехмерная визуализация интерьера</li>
+            <li class="active">Подбор и расчет отделочных материалов</li>
+          </ul>
+        </div>
+
+        <div class="price-plan__right">
+          <p class="text price-plan__desc">
+            Полный пакет документации дизайн-проекта. К технической части
+            добавляется 3D визуализация помещений (с учетом разных вариантов
+            отделки и решений), а также ведомости всех строительных материалов,
+            мебели, техники и аксессуаров. Полный комплекс документации дизайн
+            проекта позволяет безошибочно рассчитать стоимость ремонта и
+            спланировать работы поэтапно.
+          </p>
+
+          <div class="price-plan__bottom">
+            <span class="price-plan__price title5"
+              >От 2200 руб/м<sup>2</sup></span
+            >
+            <a href="#" class="btn btn--trans btn-reset price-plan__btn">
+              подробнее о тарифе
+
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.51576 13.542C7.45561 13.6057 7.40859 13.6806 7.37738 13.7624C7.34617 13.8442 7.33138 13.9314 7.33386 14.0189C7.33633 14.1064 7.35603 14.1926 7.39181 14.2725C7.4276 14.3525 7.47878 14.4246 7.54242 14.4847C7.60607 14.5448 7.68094 14.5919 7.76276 14.6231C7.84458 14.6543 7.93174 14.6691 8.01928 14.6666C8.10681 14.6641 8.193 14.6444 8.27293 14.6086C8.35285 14.5729 8.42494 14.5217 8.48509 14.458L14.1518 8.45804C14.2688 8.33426 14.334 8.17038 14.334 8.00004C14.334 7.8297 14.2688 7.66582 14.1518 7.54204L8.48509 1.54137C8.42534 1.47633 8.35326 1.42381 8.27305 1.38686C8.19283 1.34991 8.10607 1.32927 8.01781 1.32613C7.92954 1.323 7.84154 1.33743 7.7589 1.36859C7.67626 1.39976 7.60064 1.44703 7.53643 1.50767C7.47221 1.5683 7.42069 1.64109 7.38484 1.72181C7.349 1.80253 7.32955 1.88957 7.32763 1.97786C7.3257 2.06616 7.34134 2.15396 7.37364 2.23616C7.40594 2.31836 7.45424 2.39333 7.51576 2.4567L12.7504 8.00004L7.51576 13.542Z"
+                  fill="#464330"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="calc-cost">
+  <div class="container">
+    <h4 class="subtitle calc-cost__subtitle">расчет стоимости</h4>
+    <h2 class="title2 calc-cost__title">
+      Рассчитайте стоимость дизайн-проекта интерьера
+    </h2>
+
+    <div class="calc-cost__container">
+      <div class="calc-cost__calculate">
+        <div class="calc-cost__block">
+          <div class="calc-cost__sq title4">Общая площадь объекта, м2</div>
+
+          <div class="calc-cost__number">
+            <button class="btn-reset">-</button>
+            <input type="number" min="0" value="100" />
+            <button class="btn-reset">+</button>
+          </div>
+        </div>
+
+        <div class="calc-cost__block">
+          <div class="calc-cost__sq title4">Какие услуги Вам нужны?</div>
+
+          <label class="calc-cost__label calc-radio">
+            <input
+              checked
+              type="checkbox"
+              name="service"
+              class="visually-hidden calc-radio__radio"
+              value="plan"
+            />
+            <div class="calc-radio__box"></div>
+            <div class="calc-radio__name text">Планировочные решения</div>
+          </label>
+          <label class="calc-cost__label calc-radio">
+            <input
+              checked
+              type="checkbox"
+              name="service"
+              class="visually-hidden calc-radio__radio"
+              value="docum"
+            />
+            <div class="calc-radio__box"></div>
+            <div class="calc-radio__name text">Рабочая документация</div>
+          </label>
+          <label class="calc-cost__label calc-radio">
+            <input
+              checked
+              type="checkbox"
+              name="service"
+              class="visually-hidden calc-radio__radio"
+              value="3D"
+            />
+            <div class="calc-radio__box"></div>
+            <div class="calc-radio__name text">3D визуализация</div>
+          </label>
+          <label class="calc-cost__label calc-radio">
+            <input
+              checked
+              type="checkbox"
+              name="service"
+              class="visually-hidden calc-radio__radio"
+              value="material"
+            />
+            <div class="calc-radio__box"></div>
+            <div class="calc-radio__name text">Комплектация материалами</div>
+          </label>
+          <label class="calc-cost__label calc-radio">
+            <input
+              checked
+              type="checkbox"
+              name="service"
+              class="visually-hidden calc-radio__radio"
+              value="observer"
+            />
+            <div class="calc-radio__box"></div>
+            <div class="calc-radio__name text">Авторский надзор</div>
+          </label>
+        </div>
+      </div>
+
+      <div class="calc-cost__total">
+        <div class="calc-cost__result">
+          <div class="calc-cost__caption">Итоговая стоимость</div>
+          <div class="calc-cost__price"><span>240 000</span> руб.</div>
+        </div>
+        <div class="calc-cost__plan">
+          <div class="calc-cost__caption">Тариф «Оптимальный»</div>
+          <div class="calc-cost__price">
+            <span>1600</span> руб/м<sup>2</sup>
+          </div>
+        </div>
+
+        <div class="calc-cost__service">
+          <div class="calc-cost__caption">Площадь объекта</div>
+          <div class="calc-cost__price"><span>100</span> м<sup>2</sup></div>
+        </div>
+        <div class="calc-cost__service">
+          <div class="calc-cost__caption">Планировочные решения</div>
+          <div class="calc-cost__price"><span>50 000</span> руб.</div>
+        </div>
+        <div class="calc-cost__service">
+          <div class="calc-cost__caption">Рабочая документация</div>
+          <div class="calc-cost__price"><span>30 000</span>30 000 руб.</div>
+        </div>
+        <div class="calc-cost__service">
+          <div class="calc-cost__caption">3D визуализация</div>
+          <div class="calc-cost__price"><span>45 000</span> руб.</div>
+        </div>
+        <div class="calc-cost__service">
+          <div class="calc-cost__caption">Комплектация материалами</div>
+          <div class="calc-cost__price"><span>15 000</span> руб.</div>
+        </div>
+        <div class="calc-cost__service">
+          <div class="calc-cost__caption">Авторский надзор</div>
+          <div class="calc-cost__price"><span>100 000</span> руб.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <div class="vidget">
+  <img src="./logo-by-gifski.gif" alt="" />
+</div>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a href="#" class="footer__logo">
+        <img src="./img/logo.webp" alt="" />
+      </a>
+
+      <nav class="footer__nav nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">наши проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">цены</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">видео</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">блог</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-reset footer__btn btn--trans">
+        рассчитать стоимость
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.51527 13.5422C7.45512 13.6058 7.4081 13.6807 7.37689 13.7625C7.34568 13.8443 7.33089 13.9315 7.33337 14.019C7.33584 14.1066 7.35554 14.1927 7.39132 14.2727C7.42711 14.3526 7.47829 14.4247 7.54193 14.4848C7.60558 14.545 7.68045 14.592 7.76227 14.6232C7.84409 14.6544 7.93126 14.6692 8.01879 14.6667C8.10633 14.6642 8.19252 14.6446 8.27244 14.6088C8.35236 14.573 8.42446 14.5218 8.4846 14.4582L14.1513 8.45816C14.2683 8.33438 14.3335 8.1705 14.3335 8.00016C14.3335 7.82982 14.2683 7.66594 14.1513 7.54216L8.4846 1.54149C8.42485 1.47645 8.35278 1.42393 8.27256 1.38698C8.19234 1.35003 8.10558 1.32939 8.01732 1.32625C7.92905 1.32312 7.84105 1.33755 7.75841 1.36872C7.67577 1.39988 7.60015 1.44715 7.53594 1.50779C7.47172 1.56842 7.4202 1.64122 7.38435 1.72193C7.34851 1.80265 7.32906 1.88969 7.32714 1.97798C7.32521 2.06628 7.34086 2.15408 7.37315 2.23628C7.40545 2.31849 7.45375 2.39345 7.51527 2.45683L12.7499 8.00016L7.51527 13.5422Z"
+            fill="#464330"
+          />
+        </svg>
+      </a>
+    </div>
+    <div class="footer__bottom">
+      <nav class="footer__accords">
+        <ul class="list-reset footer__list">
+          <li class="footer__item footer-item">
+            <div class="footer-item__page">
+              Дизайн-проекты<br />коммерческих помещений ▼
+            </div>
+            <ul class="list-reset">
+              <li><a href="#">Дизайн проект летнего кафе</a></li>
+              <li><a href="#">Разработка концепции ресторана</a></li>
+              <li><a href="#">Дизайн квартиры п44т</a></li>
+              <li><a href="#">Ресторан под ключ</a></li>
+              <li><a href="#">Строительство бара</a></li>
+              <li><a href="#">Дизайн проект гостиницы</a></li>
+              <li><a href="#">Дизайн проект дома отдыха</a></li>
+              <li><a href="#">Дизайн проект коттеджа</a></li>
+              <li><a href="#">Дизайн проект санатория</a></li>
+              <li><a href="#">Дизайн проект дачного дома</a></li>
+              <li><a href="#">Открыть бар с нуля</a></li>
+              <li><a href="#">Дизайн проект спа</a></li>
+              <li><a href="#">Дизайн проект салона красоты</a></li>
+              <li><a href="#">Дизайн проект бара</a></li>
+              <li><a href="#">Дизайн проект фитнес клуба</a></li>
+              <li><a href="#">Дизайн проект караоке</a></li>
+              <li><a href="#">Дизайн винного погреба</a></li>
+              <li><a href="#">Дизайн проект кафе</a></li>
+              <li><a href="#">Дизайн проект клуба</a></li>
+              <li><a href="#">Дизайн проект магазина</a></li>
+              <li><a href="#">Дизайн паба</a></li>
+              <li><a href="#">Дизайн проект офиса</a></li>
+              <li><a href="#">Бар под ключ</a></li>
+              <li><a href="#">Дизайн проект бургерной</a></li>
+              <li><a href="#">Дизайн винного бутика под ключ</a></li>
+            </ul>
+          </li>
+          <li class="footer__item footer-item">
+            <div class="footer-item__page">
+              Дизайн-проекты<br />коммерческих помещений ▼
+            </div>
+            <ul class="list-reset">
+              <li><a href="">Дизайн проект таунхауса</a></li>
+              <li><a href="">Дизайн проект частного дома</a></li>
+              <li><a href="">Дизайн проект ресторана</a></li>
+              <li><a href="">Авторский дизайн интерьера</a></li>
+              <li><a href="">Открытие ресторана с нуля</a></li>
+              <li><a href="">Дизайн спорт бара</a></li>
+              <li><a href="">Дизайн ресторана в русском стиле</a></li>
+              <li><a href="">Дизайн ресторана в морском стиле</a></li>
+              <li><a href="">Дизайн бильярдного клуба</a></li>
+              <li><a href="">Дизайн интерьера ресторана</a></li>
+              <li><a href="">Дизайн проект развлекательных центров</a></li>
+              <li><a href="">Дизайн проект пивных баров</a></li>
+              <li><a href="">Дизайн проект трехкомнатной квартиры</a></li>
+              <li><a href="">Дизайн суши-бара под ключ</a></li>
+              <li><a href="">Дизайн восточного ресторана</a></li>
+              <li><a href="">Дизайн итальянского ресторана</a></li>
+              <li><a href="">Дизайн японских ресторанов</a></li>
+              <li><a href="">Дизайн ресторана в классическом стиле</a></li>
+              <li><a href="">Дизайн проект общественной бани</a></li>
+              <li><a href="">Дизайн ресторана лофт</a></li>
+              <li><a href="">Дизайн эко кафе под ключ</a></li>
+              <li><a href="">Пример готового дизайн проекта</a></li>
+              <li><a href="">Дизайн хай-тек ресторана</a></li>
+              <li><a href="">Дизайн проект кулинарии</a></li>
+              <li><a href="">Разработка концепции кафе</a></li>
+            </ul>
+          </li>
+          <li class="footer__item footer-item">
+            <div class="footer-item__page">
+              Основные<br />
+              услуги ▼
+            </div>
+            <ul class="list-reset">
+              <li><a href="">Дизайн проект таунхауса</a></li>
+              <li><a href="">Дизайн проект частного дома</a></li>
+              <li><a href="">Дизайн проект ресторана</a></li>
+              <li><a href="">Авторский дизайн интерьера</a></li>
+              <li><a href="">Открытие ресторана с нуля</a></li>
+              <li><a href="">Дизайн спорт бара</a></li>
+              <li><a href="">Дизайн ресторана в русском стиле</a></li>
+              <li><a href="">Дизайн ресторана в морском стиле</a></li>
+              <li><a href="">Дизайн бильярдного клуба</a></li>
+              <li><a href="">Дизайн интерьера ресторана</a></li>
+              <li><a href="">Дизайн проект развлекательных центров</a></li>
+              <li><a href="">Дизайн проект пивных баров</a></li>
+              <li><a href="">Дизайн проект трехкомнатной квартиры</a></li>
+              <li><a href="">Дизайн суши-бара под ключ</a></li>
+              <li><a href="">Дизайн восточного ресторана</a></li>
+              <li><a href="">Дизайн итальянского ресторана</a></li>
+              <li><a href="">Дизайн японских ресторанов</a></li>
+              <li><a href="">Дизайн ресторана в классическом стиле</a></li>
+              <li><a href="">Дизайн проект общественной бани</a></li>
+              <li><a href="">Дизайн ресторана лофт</a></li>
+              <li><a href="">Дизайн эко кафе под ключ</a></li>
+              <li><a href="">Пример готового дизайн проекта</a></li>
+              <li><a href="">Дизайн хай-тек ресторана</a></li>
+              <li><a href="">Дизайн проект кулинарии</a></li>
+              <li><a href="">Разработка концепции кафе</a></li>
+            </ul>
+          </li>
+          <li class="footer__item footer-item">
+            <div class="footer-item__page">
+              Дополнительные<br />услуги ▼
+            </div>
+            <ul class="list-reset">
+              <li><a href="#">Проектирование ресторана</a></li>
+              <li><a href="#">Дизайн проект сауны</a></li>
+              <li><a href="#">Дизайн проект турагентства</a></li>
+              <li><a href="#">Дизайн пятикомнатной квартиры</a></li>
+              <li><a href="#">Дизайн проект парикмахерской</a></li>
+              <li><a href="#">Дизайн проект косметологии</a></li>
+              <li><a href="#">Дизайн проект пекарни</a></li>
+              <li><a href="#">Дизайн проект антикафе</a></li>
+              <li><a href="#">Дизайн проект коворкинга</a></li>
+              <li><a href="#">Дизайн проект фудкорта</a></li>
+              <li><a href="#">Дизайн-проект кафетерия</a></li>
+              <li><a href="#">Концепция йога студии</a></li>
+              <li><a href="#">Дизайн барбершопа под ключ</a></li>
+              <li><a href="#">Дизайн квартиры 121 серии</a></li>
+              <li><a href="#">Дизайн проект элитного ресторана</a></li>
+              <li><a href="#">Дизайн элитного кафе</a></li>
+              <li><a href="#">Дизайн проект однокомнатной квартиры</a></li>
+              <li><a href="#">Дизайн столовых и заведений </a></li>
+              <li><a href="#">общественного питания</a></li>
+              <li><a href="#">Дизайн квартиры 137 серии</a></li>
+              <li><a href="#">Деревянные винные шкафы</a></li>
+              <li><a href="#">Дизайн ночного клуба</a></li>
+              <li><a href="#">Концепция магазина в торговом центре</a></li>
+              <li><a href="#">Дизайн летней веранды</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__right">
+        <div class="footer__socials">
+          <a href="#" class="footer__soc">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.5001 4.16675L1.66675 10.4167L7.50008 11.2501M17.5001 4.16675L15.4167 16.6667L7.50008 11.2501M17.5001 4.16675L7.50008 11.2501M7.50008 11.2501V15.8334L10.2076 13.1026"
+                stroke="#464330"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.00008 12.3334C9.88414 12.3334 10.732 11.9822 11.3571 11.3571C11.9822 10.732 12.3334 9.88414 12.3334 9.00008C12.3334 8.11603 11.9822 7.26818 11.3571 6.64306C10.732 6.01794 9.88414 5.66675 9.00008 5.66675C8.11603 5.66675 7.26818 6.01794 6.64306 6.64306C6.01794 7.26818 5.66675 8.11603 5.66675 9.00008C5.66675 9.88414 6.01794 10.732 6.64306 11.3571C7.26818 11.9822 8.11603 12.3334 9.00008 12.3334Z"
+                stroke="#464330"
+                stroke-width="1.875"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1.5 12.3333V5.66667C1.5 4.5616 1.93899 3.50179 2.72039 2.72039C3.50179 1.93899 4.5616 1.5 5.66667 1.5H12.3333C13.4384 1.5 14.4982 1.93899 15.2796 2.72039C16.061 3.50179 16.5 4.5616 16.5 5.66667V12.3333C16.5 13.4384 16.061 14.4982 15.2796 15.2796C14.4982 16.061 13.4384 16.5 12.3333 16.5H5.66667C4.5616 16.5 3.50179 16.061 2.72039 15.2796C1.93899 14.4982 1.5 13.4384 1.5 12.3333Z"
+                stroke="#464330"
+                stroke-width="1.5"
+              />
+              <path
+                d="M13.5833 4.42494L13.5916 4.41577"
+                stroke="#464330"
+                stroke-width="1.875"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg
+              width="20"
+              height="14"
+              viewBox="0 0 20 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.6667 6.99992L8.75 8.66659V5.33325L11.6667 6.99992Z"
+                fill="#464330"
+                stroke="#464330"
+                stroke-width="1.875"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1.66675 7.58992V6.40992C1.66675 3.99742 1.66675 2.79075 2.42091 2.01492C3.17591 1.23825 4.36425 1.20492 6.74008 1.13742C7.86508 1.10575 9.01508 1.08325 10.0001 1.08325C10.9851 1.08325 12.1342 1.10575 13.2601 1.13742C15.6359 1.20492 16.8242 1.23825 17.5784 2.01492C18.3326 2.79159 18.3334 3.99825 18.3334 6.40992V7.58908C18.3334 10.0024 18.3334 11.2083 17.5792 11.9849C16.8242 12.7608 15.6367 12.7949 13.2601 12.8616C12.1351 12.8941 10.9851 12.9166 10.0001 12.9166C9.01508 12.9166 7.86591 12.8941 6.74008 12.8616C4.36425 12.7949 3.17591 12.7616 2.42091 11.9849C1.66591 11.2083 1.66675 10.0016 1.66675 7.58992Z"
+                stroke="#464330"
+                stroke-width="1.5"
+              />
+            </svg>
+          </a>
+        </div>
+        <address class="footer__add">
+          <div class="footer__row">
+            <a href="tel:+74994993231" class="footer__link"
+              >+7 499 499-32-31</a
+            >
+            <a href="mailto:info@inspiregroup.pro" class="footer__link"
+              >info@inspiregroup.pro</a
+            >
+          </div>
+          <div class="footer__row">
+            <span class="footer__link">г. Москва, Волоколамское шоссе, 95</span>
+          </div>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer__extra">
+      <div class="footer__left">
+        <a href="#" class="text footer__text">Политика конфиденциальности</a>
+        <a href="#" class="text footer__text">Пользовательское Соглашение</a>
+      </div>
+
+      <small class="footer__text">©2024</small>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

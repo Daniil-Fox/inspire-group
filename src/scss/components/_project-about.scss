@@ -1,0 +1,30 @@
+.project-about {
+  padding: 12rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__info,
+  &__desc {
+    margin: 0;
+    font-family: var(--second-family);
+
+    font-size: 2rem;
+    color: var(--grey1000);
+
+    span {
+      font-weight: 600;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

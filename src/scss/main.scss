@@ -1,0 +1,34 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/nav";
+@import "./components/hero";
+@import "./components/about-sec";
+@import "./components/leaders";
+@import "./components/geographi";
+@import "./components/working";
+@import "./components/down-proj";
+@import "./components/portfolio";
+@import "./components/plan";
+@import "./components/prices";
+@import "./components/calc";
+@import "./components/testi";
+@import "./components/facts";
+@import "./components/faq";
+@import "./components/design";
+@import "./components/footer";
+@import "./components/portfolio-hero";
+@import "./components/project-hero";
+@import "./components/project-about";
+@import "./components/project-ph";
+@import "./components/calc-banner";
+@import "./components/other";
+@import "./components/price-hero";
+@import "./components/price-proj";
+@import "./components/price-plan";
+@import "./components/calc-cost";

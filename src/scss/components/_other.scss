@@ -1,0 +1,21 @@
+.other {
+  padding: 12rem 0;
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+
+  &__item {
+    min-height: 26.5rem;
+
+    .ph-item__title {
+      font-size: 1.6rem;
+    }
+  }
+}

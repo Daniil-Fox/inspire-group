@@ -1,0 +1,6 @@
+import './components/sliders.js'
+import './components/accord.js'
+import './components/tab.js'
+import './components/acc.js'
+import './components/faq-height.js'
+import './components/footer-acc.js'

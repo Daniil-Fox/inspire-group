@@ -1,0 +1,19 @@
+.price-proj {
+  padding: 12rem 0;
+  background: var(--grey300);
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__item {
+    .p-table__header {
+      justify-content: space-between;
+    }
+
+    .p-table__name,
+    .p-table__cost {
+      width: unset;
+    }
+  }
+}

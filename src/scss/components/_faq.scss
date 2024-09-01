@@ -1,0 +1,53 @@
+.faq {
+  padding: 12rem 0;
+  background: var(--grey300);
+  --item-height: unset;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 4rem;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--item-height);
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__item {
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+  }
+
+  &__quest {
+    text-transform: initial;
+  }
+
+  &__body {
+    box-sizing: content-box;
+    will-change: max-height;
+
+    transition: max-height .3s ease-out;
+
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding-top: 3rem;
+  }
+}

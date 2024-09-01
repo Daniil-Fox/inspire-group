@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>InspireGroup</title>
+  <link
+    rel="preload"
+    href="fonts/Inter-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Inter-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Manrope-Light.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Manrope-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Manrope-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Manrope-SemiBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header">
+  <div class="container">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <img src="./img/logo.png" alt="" />
+      </a>
+
+      <nav class="header__nav nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="./" class="nav__link">главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="./portfolio.html" class="nav__link">наши проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="./price.html" class="nav__link">цены</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">видео</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">блог</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__soc">
+        <a href="tel:+74994993231" class="header__tel">+7 499 499-32-31</a>
+
+        <a href="#" class="header__link">
+          <svg
+            width="21"
+            height="17"
+            viewBox="0 0 21 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 1L1 8.5L8 9.5M20 1L17.5 16L8 9.5M20 1L8 9.5M8 9.5V15L11.249 11.723"
+              stroke="#464330"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+
+        <a href="#" class="header__link">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.0012 2.90757C16.0845 1.98194 14.9926 1.24813 13.7893 0.748936C12.586 0.249746 11.2953 -0.00482603 9.9925 6.92813e-05C4.53375 6.92813e-05 0.085 4.44757 0.08 9.90757C0.08 11.6563 0.5375 13.3576 1.40125 14.8638L0 20.0001L5.255 18.6226C6.70811 19.4154 8.33719 19.8302 9.9925 19.8288H9.9975C15.4575 19.8288 19.905 15.3813 19.91 9.91632C19.9111 8.61389 19.6546 7.32411 19.1551 6.12125C18.6557 4.91838 17.9245 3.82619 17.0012 2.90757ZM9.9925 18.1513C8.51647 18.1502 7.06778 17.753 5.7975 17.0013L5.4975 16.8213L2.38 17.6388L3.2125 14.5976L3.0175 14.2838C2.19226 12.9717 1.75581 11.4526 1.75875 9.90257C1.75875 5.37007 5.455 1.67257 9.9975 1.67257C11.0797 1.67063 12.1515 1.88291 13.1513 2.29718C14.151 2.71145 15.0589 3.31952 15.8225 4.08632C16.5886 4.85025 17.196 5.75825 17.6096 6.75798C18.0232 7.75771 18.2349 8.8294 18.2325 9.91132C18.2275 14.4601 14.5312 18.1513 9.9925 18.1513ZM14.5112 11.9838C14.265 11.8601 13.0487 11.2613 12.82 11.1763C12.5925 11.0951 12.4262 11.0526 12.2637 11.3001C12.0975 11.5463 11.6225 12.1076 11.48 12.2688C11.3375 12.4351 11.19 12.4538 10.9425 12.3313C10.6962 12.2063 9.8975 11.9463 8.9525 11.1001C8.215 10.4438 7.72125 9.63132 7.57375 9.38507C7.43125 9.13757 7.56 9.00507 7.68375 8.88132C7.7925 8.77132 7.93 8.59132 8.05375 8.44882C8.17875 8.30632 8.22 8.20132 8.30125 8.03632C8.3825 7.86882 8.34375 7.72632 8.2825 7.60257C8.22 7.47882 7.72625 6.25757 7.5175 5.76507C7.3175 5.27882 7.11375 5.34632 6.96125 5.34007C6.81875 5.33132 6.6525 5.33132 6.48625 5.33132C6.36072 5.33451 6.2372 5.36358 6.12342 5.41671C6.00963 5.46984 5.90804 5.54588 5.825 5.64007C5.5975 5.88757 4.96125 6.48632 4.96125 7.70757C4.96125 8.92882 5.84875 10.1026 5.97375 10.2688C6.09625 10.4351 7.71625 12.9338 10.2025 14.0088C10.79 14.2651 11.2525 14.4163 11.6137 14.5313C12.2075 14.7213 12.7437 14.6926 13.1712 14.6313C13.6462 14.5588 14.635 14.0313 14.8437 13.4526C15.0487 12.8726 15.0487 12.3776 14.9862 12.2738C14.925 12.1688 14.7587 12.1076 14.5112 11.9838Z"
+              fill="#464330"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <div class="hero__left">
+        <p class="hero__subtitle">Успешно работаем более 10-ти лет</p>
+        <h1 class="hero__title">
+          дизайн-проектирование общественных и жилых помещений
+        </h1>
+      </div>
+      <div class="hero__right">
+        <a href="#" class="btn btn-reset hero__btn"
+          >Рассчитать стоимость
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.51527 13.542C7.45512 13.6056 7.4081 13.6805 7.37689 13.7623C7.34568 13.8441 7.33089 13.9313 7.33337 14.0188C7.33584 14.1064 7.35554 14.1926 7.39132 14.2725C7.42711 14.3524 7.47829 14.4245 7.54193 14.4846C7.60558 14.5448 7.68045 14.5918 7.76227 14.623C7.84409 14.6542 7.93126 14.669 8.01879 14.6665C8.10633 14.6641 8.19252 14.6444 8.27244 14.6086C8.35236 14.5728 8.42446 14.5216 8.4846 14.458L14.1513 8.45798C14.2683 8.3342 14.3335 8.17032 14.3335 7.99998C14.3335 7.82964 14.2683 7.66576 14.1513 7.54198L8.4846 1.54131C8.42485 1.47627 8.35278 1.42375 8.27256 1.3868C8.19234 1.34985 8.10558 1.32921 8.01732 1.32607C7.92905 1.32294 7.84105 1.33737 7.75841 1.36853C7.67577 1.3997 7.60015 1.44697 7.53594 1.5076C7.47172 1.56824 7.4202 1.64103 7.38435 1.72175C7.34851 1.80247 7.32906 1.8895 7.32714 1.9778C7.32521 2.0661 7.34086 2.1539 7.37315 2.2361C7.40545 2.3183 7.45375 2.39327 7.51527 2.45664L12.7499 7.99998L7.51527 13.542Z"
+              fill="#464330"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="about-sec">
+  <div class="about-sec__container">
+    <div class="about-sec__left">
+      <h4 class="subtitle about-sec__subtitle">О нас</h4>
+      <h2 class="title2 about-sec__title">Мы любим то, что делаем</h2>
+
+      <p class="about-sec__desc text">
+        Компания InspireGroup объединяет профессиональных дизайнеров, которые
+        являются настоящими фанатами своего дела. Наша команда готова взяться за
+        выполнение заказов самого различного профиля и уровня сложности. Мы
+        ценим мнение своих заказчиков и стараемся учитывать их пожелания при
+        создании концепции.
+        <br />
+        <br />
+        Наш путь развития начался ещё в 2008 году.<br />Мы многое сделали за эти
+        без малого 15 лет упорной работы, и многое ещё запланировано.<br />К
+        сегодняшнему дню наша компания собрала дружную команду из 22
+        профессиональных специалистов, которые верят в своё дело. И мы можем
+        гордиться результатами своего труда, ведь на счету нашей компании
+        уже более 50 проектов и множество довольных постоянных клиентов.
+      </p>
+      <a href="#!" class="btn btn-reset btn--trans about-sec__btn">
+        подробнее
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.51527 13.542C7.45512 13.6057 7.4081 13.6806 7.37689 13.7624C7.34568 13.8442 7.33089 13.9314 7.33337 14.0189C7.33584 14.1064 7.35554 14.1926 7.39132 14.2725C7.42711 14.3525 7.47829 14.4246 7.54193 14.4847C7.60558 14.5448 7.68045 14.5919 7.76227 14.6231C7.84409 14.6543 7.93126 14.6691 8.01879 14.6666C8.10633 14.6641 8.19252 14.6444 8.27244 14.6086C8.35236 14.5729 8.42446 14.5217 8.4846 14.458L14.1513 8.45804C14.2683 8.33426 14.3335 8.17038 14.3335 8.00004C14.3335 7.8297 14.2683 7.66582 14.1513 7.54204L8.4846 1.54137C8.42485 1.47633 8.35278 1.42381 8.27256 1.38686C8.19234 1.34991 8.10558 1.32927 8.01732 1.32613C7.92905 1.323 7.84105 1.33743 7.75841 1.36859C7.67577 1.39976 7.60015 1.44703 7.53594 1.50767C7.47172 1.5683 7.4202 1.64109 7.38435 1.72181C7.34851 1.80253 7.32906 1.88957 7.32714 1.97786C7.32521 2.06616 7.34086 2.15396 7.37315 2.23616C7.40545 2.31836 7.45375 2.39333 7.51527 2.4567L12.7499 8.00004L7.51527 13.542Z"
+            fill="#464330"
+          />
+        </svg>
+      </a>
+    </div>
+    <div class="about-sec__right">
+      <div class="about-sec__img">
+        <img src="./img/about.webp" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="leaders">
+  <div class="container">
+    <h4 class="subtitle leaders__subtitle">руководители студии</h4>
+
+    <h2 class="title2 leaders__title">мы всегда открыты к сотрудничеству</h2>
+
+    <div class="leaders__items">
+      <div class="leaders__item">
+        <div class="leaders__img">
+          <img src="./img/leaders/01.webp" alt="" />
+        </div>
+        <div class="leaders__about">
+          <div class="leaders__name title5">Александр Новиков</div>
+          <div class="leaders__prof text">
+            Основатель студии, архитектор, координатор проектов.
+          </div>
+        </div>
+      </div>
+      <div class="leaders__item">
+        <div class="leaders__img">
+          <img src="./img/leaders/02.webp" alt="" />
+        </div>
+        <div class="leaders__about">
+          <div class="leaders__name title5">Елизавета Петрова</div>
+          <div class="leaders__prof text">
+            Директор студии, дизайнер, координатор проектов.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="geographi">
+  <div class="container">
+    <h4 class="subtitle geographi__subtitle">география</h4>
+    <h2 class="title2 geographi__title">работаем по всей россии</h2>
+
+    <div class="geographi__map">
+      <img src="./img/map.svg" alt="" />
+    </div>
+  </div>
+</section>
+
+        <section class="working">
+  <div class="container">
+    <h4 class="subtitle working__subtitle">как мы работаем</h4>
+    <h2 class="title2 working__title">поэтапная схема дизайн-проектирования</h2>
+
+    <div class="working__content">
+      <div class="working__slider swiper swiper-no-swiping">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="working__img">
+              <img src="./img/working/01.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="working__img">
+              <img src="./img/working/02.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="working__img">
+              <img src="./img/working/03.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="working__img">
+              <img src="./img/working/04.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="working__img">
+              <img src="./img/working/05.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="working__img">
+              <img src="./img/working/06.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="working__items">
+        <ul class="list-reset working__list">
+          <li class="working__item w-item">
+            <div class="w-item__header title4">1. Обмерный план</div>
+            <div class="w-item__body">
+              <div class="w-item__content text">
+                Предоставляется заказчиком, либо выполняется нашими
+                профессиональными замерщиками.
+              </div>
+            </div>
+          </li>
+          <li class="working__item w-item">
+            <div class="w-item__header title4">
+              2. Зонирование с расстановкой мебели оборудования
+            </div>
+            <div class="w-item__body">
+              <div class="w-item__content text">
+                Предоставляется заказчиком, либо выполняется нашими
+                профессиональными замерщиками.
+              </div>
+            </div>
+          </li>
+          <li class="working__item w-item">
+            <div class="w-item__header title4">3. Эскизы (3D визуализации)</div>
+            <div class="w-item__body">
+              <div class="w-item__content text">
+                Предоставляется заказчиком, либо выполняется нашими
+                профессиональными замерщиками.
+              </div>
+            </div>
+          </li>
+          <li class="working__item w-item">
+            <div class="w-item__header title4">4. Рабочие чертежи</div>
+            <div class="w-item__body">
+              <div class="w-item__content text">
+                Предоставляется заказчиком, либо выполняется нашими
+                профессиональными замерщиками.
+              </div>
+            </div>
+          </li>
+          <li class="working__item w-item">
+            <div class="w-item__header title4">5. Спецификации</div>
+            <div class="w-item__body">
+              <div class="w-item__content text">
+                Предоставляется заказчиком, либо выполняется нашими
+                профессиональными замерщиками.
+              </div>
+            </div>
+          </li>
+          <li class="working__item w-item">
+            <div class="w-item__header title4">
+              6. Авторский надзор и комплектация
+            </div>
+            <div class="w-item__body">
+              <div class="w-item__content text">
+                Предоставляется заказчиком, либо выполняется нашими
+                профессиональными замерщиками.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="down-proj">
+  <div class="container">
+    <div class="down-proj__container">
+      <div class="down-proj__content">
+        <h2 class="title2 down-proj__title">
+          ознакомтесь с Готовым дизайн-проектом
+        </h2>
+        <p class="down-proj__desc text">
+          Дизайн-проект — не только красивый рисунок, полностью воплотивший вашу
+          идею. Это профессиональная планировка помещения, грамотное освещение,
+          инженерный проект, план электрики, план сантехники, развертки стен,
+          план потолков, план полов, разрезы пирога пола и стен, комплектация
+          ведомости мебели и отделочных материалов, 3d-визуализация. В нем будут
+          просчитаны все цифры для воплощения проекта в жизнь. Дизайн-проект вы
+          получите в виде сброшюрованной книги, а также в электронном виде.
+        </p>
+      </div>
+      <a href="3" class="down-proj__link">
+        <span class="down-proj__preview">
+          <img src="./img/down-proj.webp" alt="" />
+        </span>
+
+        <span class="title4 down-proj__capture">полный проект [pdf]</span>
+        <p class="down-proj__text">
+          Внутри планы, развертки, узлы, 3-d визуализации, техническое задание
+          по мебели, спецификации, ведомость объемов работ.
+        </p>
+      </a>
+    </div>
+  </div>
+</section>
+
+        <section class="portfolio">
+  <div class="container">
+    <h2 class="portfolio__title title2">Портфолио</h2>
+
+    <div class="portfolio__tabs">
+      <div class="portfolio__tab active" data-tab="all">Все заведения</div>
+      <div class="portfolio__tab" data-tab="commerce">Коммерчиские</div>
+      <div class="portfolio__tab" data-tab="property">Частные</div>
+    </div>
+
+    <div
+      class="portfolio__content portfolio__slider swiper active"
+      data-tab-content="all"
+    >
+      <div class="portfolio__control control">
+        <div class="control__btn control__btn--prev portfolio-prev"></div>
+        <div class="control__btn control__btn--next portfolio-next"></div>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide portfolio__work p-work">
+          <div class="p-work__item p-item">
+            <div class="p-item__body">
+              <div class="p-item__info">
+                <div class="p-item__capture">
+                  Тип заведения: <span>Ресторан</span>
+                </div>
+                <div class="p-item__capture">
+                  Город: <span>Петропаловск-Камчатский</span>
+                </div>
+                <div class="p-item__capture">
+                  Дата открытия: <span>2020 год</span>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn--trans p-item__btn">
+                подробнее
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.51527 13.5422C7.45512 13.6058 7.4081 13.6807 7.37689 13.7625C7.34568 13.8443 7.33089 13.9315 7.33337 14.019C7.33584 14.1066 7.35554 14.1927 7.39132 14.2727C7.42711 14.3526 7.47829 14.4247 7.54193 14.4848C7.60558 14.545 7.68045 14.592 7.76227 14.6232C7.84409 14.6544 7.93126 14.6692 8.01879 14.6667C8.10633 14.6642 8.19252 14.6446 8.27244 14.6088C8.35236 14.573 8.42446 14.5218 8.4846 14.4582L14.1513 8.45816C14.2683 8.33438 14.3335 8.1705 14.3335 8.00016C14.3335 7.82982 14.2683 7.66594 14.1513 7.54216L8.4846 1.54149C8.42485 1.47645 8.35278 1.42393 8.27256 1.38698C8.19234 1.35003 8.10558 1.32939 8.01732 1.32625C7.92905 1.32312 7.84105 1.33755 7.75841 1.36872C7.67577 1.39988 7.60015 1.44715 7.53594 1.50779C7.47172 1.56842 7.4202 1.64122 7.38435 1.72193C7.34851 1.80265 7.32906 1.88969 7.32714 1.97798C7.32521 2.06628 7.34086 2.15408 7.37315 2.23628C7.40545 2.31849 7.45375 2.39345 7.51527 2.45683L12.7499 8.00016L7.51527 13.5422Z"
+                    fill="#464330"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/01.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/02.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/03.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/04.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/05.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide portfolio__work p-work">
+          <div class="p-work__item p-item">
+            <div class="p-item__body">
+              <div class="p-item__info">
+                <div class="p-item__capture">
+                  Тип заведения: <span>Ресторан</span>
+                </div>
+                <div class="p-item__capture">
+                  Город: <span>Петропаловск-Камчатский</span>
+                </div>
+                <div class="p-item__capture">
+                  Дата открытия: <span>2020 год</span>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn--trans p-item__btn">
+                подробнее
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.51527 13.5422C7.45512 13.6058 7.4081 13.6807 7.37689 13.7625C7.34568 13.8443 7.33089 13.9315 7.33337 14.019C7.33584 14.1066 7.35554 14.1927 7.39132 14.2727C7.42711 14.3526 7.47829 14.4247 7.54193 14.4848C7.60558 14.545 7.68045 14.592 7.76227 14.6232C7.84409 14.6544 7.93126 14.6692 8.01879 14.6667C8.10633 14.6642 8.19252 14.6446 8.27244 14.6088C8.35236 14.573 8.42446 14.5218 8.4846 14.4582L14.1513 8.45816C14.2683 8.33438 14.3335 8.1705 14.3335 8.00016C14.3335 7.82982 14.2683 7.66594 14.1513 7.54216L8.4846 1.54149C8.42485 1.47645 8.35278 1.42393 8.27256 1.38698C8.19234 1.35003 8.10558 1.32939 8.01732 1.32625C7.92905 1.32312 7.84105 1.33755 7.75841 1.36872C7.67577 1.39988 7.60015 1.44715 7.53594 1.50779C7.47172 1.56842 7.4202 1.64122 7.38435 1.72193C7.34851 1.80265 7.32906 1.88969 7.32714 1.97798C7.32521 2.06628 7.34086 2.15408 7.37315 2.23628C7.40545 2.31849 7.45375 2.39345 7.51527 2.45683L12.7499 8.00016L7.51527 13.5422Z"
+                    fill="#464330"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/01.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/02.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/03.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/04.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/05.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="portfolio__content portfolio__slider swiper"
+      data-tab-content="commerce"
+    >
+      <div class="portfolio__control control">
+        <div class="control__btn control__btn--prev portfolio-prev"></div>
+        <div class="control__btn control__btn--next portfolio-next"></div>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide portfolio__work p-work">
+          <div class="p-work__item p-item">
+            <div class="p-item__body">
+              <div class="p-item__info">
+                <div class="p-item__capture">
+                  Тип заведения: <span>Ресторан</span>
+                </div>
+                <div class="p-item__capture">
+                  Город: <span>Петропаловск-Камчатский</span>
+                </div>
+                <div class="p-item__capture">
+                  Дата открытия: <span>2020 год</span>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn--trans p-item__btn">
+                подробнее
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.51527 13.5422C7.45512 13.6058 7.4081 13.6807 7.37689 13.7625C7.34568 13.8443 7.33089 13.9315 7.33337 14.019C7.33584 14.1066 7.35554 14.1927 7.39132 14.2727C7.42711 14.3526 7.47829 14.4247 7.54193 14.4848C7.60558 14.545 7.68045 14.592 7.76227 14.6232C7.84409 14.6544 7.93126 14.6692 8.01879 14.6667C8.10633 14.6642 8.19252 14.6446 8.27244 14.6088C8.35236 14.573 8.42446 14.5218 8.4846 14.4582L14.1513 8.45816C14.2683 8.33438 14.3335 8.1705 14.3335 8.00016C14.3335 7.82982 14.2683 7.66594 14.1513 7.54216L8.4846 1.54149C8.42485 1.47645 8.35278 1.42393 8.27256 1.38698C8.19234 1.35003 8.10558 1.32939 8.01732 1.32625C7.92905 1.32312 7.84105 1.33755 7.75841 1.36872C7.67577 1.39988 7.60015 1.44715 7.53594 1.50779C7.47172 1.56842 7.4202 1.64122 7.38435 1.72193C7.34851 1.80265 7.32906 1.88969 7.32714 1.97798C7.32521 2.06628 7.34086 2.15408 7.37315 2.23628C7.40545 2.31849 7.45375 2.39345 7.51527 2.45683L12.7499 8.00016L7.51527 13.5422Z"
+                    fill="#464330"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/01.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/02.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/03.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/04.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/05.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide portfolio__work p-work">
+          <div class="p-work__item p-item">
+            <div class="p-item__body">
+              <div class="p-item__info">
+                <div class="p-item__capture">
+                  Тип заведения: <span>Ресторан</span>
+                </div>
+                <div class="p-item__capture">
+                  Город: <span>Петропаловск-Камчатский</span>
+                </div>
+                <div class="p-item__capture">
+                  Дата открытия: <span>2020 год</span>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn--trans p-item__btn">
+                подробнее
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.51527 13.5422C7.45512 13.6058 7.4081 13.6807 7.37689 13.7625C7.34568 13.8443 7.33089 13.9315 7.33337 14.019C7.33584 14.1066 7.35554 14.1927 7.39132 14.2727C7.42711 14.3526 7.47829 14.4247 7.54193 14.4848C7.60558 14.545 7.68045 14.592 7.76227 14.6232C7.84409 14.6544 7.93126 14.6692 8.01879 14.6667C8.10633 14.6642 8.19252 14.6446 8.27244 14.6088C8.35236 14.573 8.42446 14.5218 8.4846 14.4582L14.1513 8.45816C14.2683 8.33438 14.3335 8.1705 14.3335 8.00016C14.3335 7.82982 14.2683 7.66594 14.1513 7.54216L8.4846 1.54149C8.42485 1.47645 8.35278 1.42393 8.27256 1.38698C8.19234 1.35003 8.10558 1.32939 8.01732 1.32625C7.92905 1.32312 7.84105 1.33755 7.75841 1.36872C7.67577 1.39988 7.60015 1.44715 7.53594 1.50779C7.47172 1.56842 7.4202 1.64122 7.38435 1.72193C7.34851 1.80265 7.32906 1.88969 7.32714 1.97798C7.32521 2.06628 7.34086 2.15408 7.37315 2.23628C7.40545 2.31849 7.45375 2.39345 7.51527 2.45683L12.7499 8.00016L7.51527 13.5422Z"
+                    fill="#464330"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/01.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/02.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/03.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/04.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/05.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="portfolio__content portfolio__slider swiper"
+      data-tab-content="property"
+    >
+      <div class="portfolio__control control">
+        <div class="control__btn control__btn--prev portfolio-prev"></div>
+        <div class="control__btn control__btn--next portfolio-next"></div>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide portfolio__work p-work">
+          <div class="p-work__item p-item">
+            <div class="p-item__body">
+              <div class="p-item__info">
+                <div class="p-item__capture">
+                  Тип заведения: <span>Ресторан</span>
+                </div>
+                <div class="p-item__capture">
+                  Город: <span>Петропаловск-Камчатский</span>
+                </div>
+                <div class="p-item__capture">
+                  Дата открытия: <span>2020 год</span>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn--trans p-item__btn">
+                подробнее
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.51527 13.5422C7.45512 13.6058 7.4081 13.6807 7.37689 13.7625C7.34568 13.8443 7.33089 13.9315 7.33337 14.019C7.33584 14.1066 7.35554 14.1927 7.39132 14.2727C7.42711 14.3526 7.47829 14.4247 7.54193 14.4848C7.60558 14.545 7.68045 14.592 7.76227 14.6232C7.84409 14.6544 7.93126 14.6692 8.01879 14.6667C8.10633 14.6642 8.19252 14.6446 8.27244 14.6088C8.35236 14.573 8.42446 14.5218 8.4846 14.4582L14.1513 8.45816C14.2683 8.33438 14.3335 8.1705 14.3335 8.00016C14.3335 7.82982 14.2683 7.66594 14.1513 7.54216L8.4846 1.54149C8.42485 1.47645 8.35278 1.42393 8.27256 1.38698C8.19234 1.35003 8.10558 1.32939 8.01732 1.32625C7.92905 1.32312 7.84105 1.33755 7.75841 1.36872C7.67577 1.39988 7.60015 1.44715 7.53594 1.50779C7.47172 1.56842 7.4202 1.64122 7.38435 1.72193C7.34851 1.80265 7.32906 1.88969 7.32714 1.97798C7.32521 2.06628 7.34086 2.15408 7.37315 2.23628C7.40545 2.31849 7.45375 2.39345 7.51527 2.45683L12.7499 8.00016L7.51527 13.5422Z"
+                    fill="#464330"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/01.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/02.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/03.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/04.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/05.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide portfolio__work p-work">
+          <div class="p-work__item p-item">
+            <div class="p-item__body">
+              <div class="p-item__info">
+                <div class="p-item__capture">
+                  Тип заведения: <span>Ресторан</span>
+                </div>
+                <div class="p-item__capture">
+                  Город: <span>Петропаловск-Камчатский</span>
+                </div>
+                <div class="p-item__capture">
+                  Дата открытия: <span>2020 год</span>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn--trans p-item__btn">
+                подробнее
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.51527 13.5422C7.45512 13.6058 7.4081 13.6807 7.37689 13.7625C7.34568 13.8443 7.33089 13.9315 7.33337 14.019C7.33584 14.1066 7.35554 14.1927 7.39132 14.2727C7.42711 14.3526 7.47829 14.4247 7.54193 14.4848C7.60558 14.545 7.68045 14.592 7.76227 14.6232C7.84409 14.6544 7.93126 14.6692 8.01879 14.6667C8.10633 14.6642 8.19252 14.6446 8.27244 14.6088C8.35236 14.573 8.42446 14.5218 8.4846 14.4582L14.1513 8.45816C14.2683 8.33438 14.3335 8.1705 14.3335 8.00016C14.3335 7.82982 14.2683 7.66594 14.1513 7.54216L8.4846 1.54149C8.42485 1.47645 8.35278 1.42393 8.27256 1.38698C8.19234 1.35003 8.10558 1.32939 8.01732 1.32625C7.92905 1.32312 7.84105 1.33755 7.75841 1.36872C7.67577 1.39988 7.60015 1.44715 7.53594 1.50779C7.47172 1.56842 7.4202 1.64122 7.38435 1.72193C7.34851 1.80265 7.32906 1.88969 7.32714 1.97798C7.32521 2.06628 7.34086 2.15408 7.37315 2.23628C7.40545 2.31849 7.45375 2.39345 7.51527 2.45683L12.7499 8.00016L7.51527 13.5422Z"
+                    fill="#464330"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/01.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/02.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/03.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/04.webp" alt="" />
+            </div>
+          </div>
+          <div class="p-work__item p-item">
+            <div class="p-item__img">
+              <img src="./img/portfolio/05.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="plan">
+  <div class="container">
+    <h4 class="subtitle plan__subtitle">План сотрудничества</h4>
+    <h2 class="title2 plan__title">С чего начать работу с нами</h2>
+
+    <div class="plan__items">
+      <div class="plan__item plan-item">
+        <div class="plan-item__capture title4">Знакомство</div>
+        <p class="text plan-item__desc">
+          Если вы в первый раз заказываете дизайн-проект, то у вас наверняка
+          очень много вопросов, и мы с радостью ответим на каждый из них. Вы
+          можете написать нам в WhatsApp, Instagram Direct или позвонить.
+        </p>
+      </div>
+      <div class="plan__item plan-item">
+        <div class="plan-item__capture title4">Знакомство</div>
+        <p class="text plan-item__desc">
+          Если вы в первый раз заказываете дизайн-проект, то у вас наверняка
+          очень много вопросов, и мы с радостью ответим на каждый из них. Вы
+          можете написать нам в WhatsApp, Instagram Direct или позвонить.
+        </p>
+      </div>
+      <div class="plan__item plan-item">
+        <div class="plan-item__capture title4">Знакомство</div>
+        <p class="text plan-item__desc">
+          Если вы в первый раз заказываете дизайн-проект, то у вас наверняка
+          очень много вопросов, и мы с радостью ответим на каждый из них. Вы
+          можете написать нам в WhatsApp, Instagram Direct или позвонить.
+        </p>
+      </div>
+      <div class="plan__item plan-item">
+        <div class="plan-item__capture title4">Знакомство</div>
+        <p class="text plan-item__desc">
+          Если вы в первый раз заказываете дизайн-проект, то у вас наверняка
+          очень много вопросов, и мы с радостью ответим на каждый из них. Вы
+          можете написать нам в WhatsApp, Instagram Direct или позвонить.
+        </p>
+      </div>
+      <div class="plan__item plan-item">
+        <div class="plan-item__capture title4">Знакомство</div>
+        <p class="text plan-item__desc">
+          Если вы в первый раз заказываете дизайн-проект, то у вас наверняка
+          очень много вопросов, и мы с радостью ответим на каждый из них. Вы
+          можете написать нам в WhatsApp, Instagram Direct или позвонить.
+        </p>
+      </div>
+      <div class="plan__wrapper">
+        <a href="#" class="btn btn-reset btn--trans plan__btn">
+          обсудить проект
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.51527 13.5422C7.45512 13.6058 7.4081 13.6807 7.37689 13.7625C7.34568 13.8443 7.33089 13.9315 7.33337 14.019C7.33584 14.1066 7.35554 14.1927 7.39132 14.2727C7.42711 14.3526 7.47829 14.4247 7.54193 14.4848C7.60558 14.545 7.68045 14.592 7.76227 14.6232C7.84409 14.6544 7.93126 14.6692 8.01879 14.6667C8.10633 14.6642 8.19252 14.6446 8.27244 14.6088C8.35236 14.573 8.42446 14.5218 8.4846 14.4582L14.1513 8.45816C14.2683 8.33438 14.3335 8.1705 14.3335 8.00016C14.3335 7.82982 14.2683 7.66594 14.1513 7.54216L8.4846 1.54149C8.42485 1.47645 8.35278 1.42393 8.27256 1.38698C8.19234 1.35003 8.10558 1.32939 8.01732 1.32625C7.92905 1.32312 7.84105 1.33755 7.75841 1.36871C7.67577 1.39988 7.60015 1.44715 7.53594 1.50779C7.47172 1.56842 7.4202 1.64121 7.38435 1.72193C7.34851 1.80265 7.32906 1.88969 7.32714 1.97798C7.32521 2.06628 7.34086 2.15408 7.37315 2.23628C7.40545 2.31849 7.45375 2.39345 7.51527 2.45683L12.7499 8.00016L7.51527 13.5422Z"
+              fill="#464330"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="prices">
+  <div class="container">
+    <h4 class="subtitle prices__subtitle">цены</h4>
+    <h2 class="prices__title title2">
+      Стоимость услуг<br />компании InspireGroup
+    </h2>
+
+    <div class="prices__tables">
+      <div class="prices__table p-table">
+        <div class="p-table__capture title4">Коммерческие объекты</div>
+        <ul class="list-reset p-table__list">
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Дизайн-проект</div>
+
+              <div class="p-table__cost text">от 3000 руб/м2</div>
+              <div class="p-table__time text">от 45 дней</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn>
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Авторский надзор</div>
+
+              <div class="p-table__cost text">1000 руб/м2</div>
+              <div class="p-table__time text">в месяц</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn>
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Планировочное решение</div>
+
+              <div class="p-table__cost text">500 руб/м2</div>
+              <div class="p-table__time text">в месяц</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn="">
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Дизайн-экспресс</div>
+              <div class="p-table__cost text">1000 руб/м2</div>
+              <div class="p-table__time text">от 5 дней</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn>
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="prices__table p-table">
+        <div class="p-table__capture title4">Коммерческие объекты</div>
+        <ul class="list-reset p-table__list">
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Дизайн-проект</div>
+
+              <div class="p-table__cost text">от 3000 руб/м2</div>
+              <div class="p-table__time text">от 45 дней</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn>
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Авторский надзор</div>
+
+              <div class="p-table__cost text">1000 руб/м2</div>
+              <div class="p-table__time text">в месяц</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn>
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Планировочное решение</div>
+
+              <div class="p-table__cost text">500 руб/м2</div>
+              <div class="p-table__time text">в месяц</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn="">
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="p-table__item" data-acc-container="1">
+            <div class="p-table__header">
+              <div class="p-table__name title4">Дизайн-экспресс</div>
+              <div class="p-table__cost text">1000 руб/м2</div>
+              <div class="p-table__time text">от 5 дней</div>
+
+              <button class="btn-reset p-table__more" data-acc-btn>
+                <img src="./img/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="p-table__content" data-acc-content>
+              <div class="p-table__body">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit quo incidunt, voluptatibus tenetur, veniam nostrum
+                  atque enim maiores minima consequuntur dolorem quaerat
+                  blanditiis ipsa nam. Doloremque expedita aliquid praesentium
+                  quisquam sunt beatae fuga consequatur tenetur aut, autem
+                  delectus molestias quos reprehenderit explicabo excepturi
+                  tempora quasi necessitatibus doloribus totam! Delectus,
+                  corporis?
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="calc">
+  <div class="calc__container">
+    <div class="calc__image">
+      <img src="./img/calc.webp" alt="" />
+    </div>
+
+    <div class="calc__content">
+      <h2 class="title2 calc__title">
+        рассчитайте стоимость
+        <span>своего проекта</span>
+      </h2>
+      <p class="text calc__desc">
+        Пройдите тест и получите стоимость вашего проекта.<br />Расчет
+        производиться бесплатно, занимает 1 минуту и не к чему вас не обязывает.
+      </p>
+      <a href="#" class="btn btn-reset btn--trans calc__btn">
+        рассчитать стоимость
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.51527 13.5422C7.45512 13.6058 7.4081 13.6807 7.37689 13.7625C7.34568 13.8443 7.33089 13.9315 7.33337 14.019C7.33584 14.1066 7.35554 14.1927 7.39132 14.2727C7.42711 14.3526 7.47829 14.4247 7.54193 14.4848C7.60558 14.545 7.68045 14.592 7.76227 14.6232C7.84409 14.6544 7.93126 14.6692 8.01879 14.6667C8.10633 14.6642 8.19252 14.6446 8.27244 14.6088C8.35236 14.573 8.42446 14.5218 8.4846 14.4582L14.1513 8.45816C14.2683 8.33438 14.3335 8.1705 14.3335 8.00016C14.3335 7.82982 14.2683 7.66594 14.1513 7.54216L8.4846 1.54149C8.42485 1.47645 8.35278 1.42393 8.27256 1.38698C8.19234 1.35003 8.10558 1.32939 8.01732 1.32625C7.92905 1.32312 7.84105 1.33755 7.75841 1.36872C7.67577 1.39988 7.60015 1.44715 7.53594 1.50779C7.47172 1.56842 7.4202 1.64122 7.38435 1.72193C7.34851 1.80265 7.32906 1.88969 7.32714 1.97798C7.32521 2.06628 7.34086 2.15408 7.37315 2.23628C7.40545 2.31849 7.45375 2.39345 7.51527 2.45683L12.7499 8.00016L7.51527 13.5422Z"
+            fill="#464330"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+        <section class="testi">
+  <div class="container">
+    <h4 class="subtitle test__subtitle">отзывы</h4>
+    <h2 class="title2 testi__title">Что о нас говорят</h2>
+    <div class="swiper testi__items">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testi__container">
+            <div class="testi__left">
+              <div class="testi__comment">
+                <p class="text">
+                  Разнообразный и богатый опыт дальнейшее развитие различных
+                  форм деятельности позволяет оценить значение позиций,
+                  занимаемых участниками в отношении поставленных задач.
+                  Повседневная практика показывает, что сложившаяся структура
+                  организации обеспечивает широкому кругу участие в формировании
+                  новых предложений. Значимость этих проблем настолько очевидна,
+                  что постоянный количественный рост и сфера нашей активности
+                  требуют определения и уточнения новых предложений укрепление и
+                  развитие структуры. Разнообразный и богатый опыт новая модель
+                  организационной деятельности позволяет оценить значение
+                  дальнейших направлений и опыта.
+                </p>
+              </div>
+              <span class="testi__author">Александр Нестеров</span>
+            </div>
+            <div class="testi__right">
+              <div class="testi__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/01.webp" alt="" />
+                  </div>
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/02.webp" alt="" />
+                  </div>
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/03.webp" alt="" />
+                  </div>
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/04.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="testi__thumbs swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/01.webp" alt="" />
+                  </div>
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/02.webp" alt="" />
+                  </div>
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/03.webp" alt="" />
+                  </div>
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/04.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testi__container">
+            <div class="testi__left">
+              <div class="testi__comment">
+                <p class="text">
+                  Разнообразный и богатый опыт дальнейшее развитие различных
+                  форм деятельности позволяет оценить значение позиций,
+                  занимаемых участниками в отношении поставленных задач.
+                  Повседневная практика показывает, что сложившаяся структура
+                  организации обеспечивает широкому кругу участие в формировании
+                  новых предложений. Значимость этих проблем настолько очевидна,
+                  что постоянный количественный рост и сфера нашей активности
+                  требуют определения и уточнения новых предложений укрепление и
+                  развитие структуры. Разнообразный и богатый опыт новая модель
+                  организационной деятельности позволяет оценить значение
+                  дальнейших направлений и опыта.
+                </p>
+              </div>
+              <span class="testi__author">Александр Нестеров</span>
+            </div>
+            <div class="testi__right">
+              <div class="testi__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/01.webp" alt="" />
+                  </div>
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/02.webp" alt="" />
+                  </div>
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/03.webp" alt="" />
+                  </div>
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/04.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="testi__thumbs swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/01.webp" alt="" />
+                  </div>
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/02.webp" alt="" />
+                  </div>
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/03.webp" alt="" />
+                  </div>
+                  <div class="swiper-slide testi__slide">
+                    <img src="./img/testi/04.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="control testi__control">
+        <div class="control__btn control__btn--prev testi-prev"></div>
+        <div class="testi__pagination"></div>
+        <div class="control__btn control__btn--next testi-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+ <div class="vidget">
+  <img src="./logo-by-gifski.gif" alt="" />
+</div>
+
+        <section class="facts">
+  <div class="container">
+    <h2 class="title2 facts__title">факты, которые будут вам интересны</h2>
+
+    <ul class="list-reset facts__list">
+      <li class="facts__item f-item" data-acc-container="1">
+        <div class="f-item__header title4">
+          Уникальность и собственный стиль в интерьере
+
+          <button class="btn-reset f-item__btn" data-acc-btn>
+            <img src="./img/plus.svg" alt="" />
+          </button>
+        </div>
+        <div class="f-item__body" data-acc-content>
+          <div class="f-item__content">
+            <p class="text">
+              Успешность ресторана, бара, клуба и кафе определяется сочетанием
+              широкого ряда параметров. Особое место среди них занимает
+              уникальность, привлекательность с точки зрения собственного стиля.
+              Современное понятие бренда включается в себя много составляющих,
+              но узнаваемость и индивидуальность остаются основными, стартовыми.
+              Мебель — это те предметы, с которыми посетитель вашего заведения
+              сталкивается сразу же при входе и далее контактирует в течение
+              всего времени посещения. От удобства, функциональности и эстетики
+              мебели зависит то впечатление, что будет основным, определяющим
+              дальнейшую привязку клиента к вашему бару или ресторану. Коллектив
+              InspireGroup разрабатывает уникальные варианты дизайна интерьера с
+              авторской мебелью — все предложенные решения не повторяются! Мы
+              разрабатываем не просто набор предметов — мы закладываем основу
+              бренда с самого начала и доводим все до полной готовности — под
+              ключ!
+            </p>
+
+            <div class="f-item__img">
+              <img src="./img/facts/01.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="facts__item f-item" data-acc-container="1">
+        <div class="f-item__header title4">
+          Мебель и интерьер — основа создания авторского дизайна
+
+          <button class="btn-reset f-item__btn" data-acc-btn>
+            <img src="./img/plus.svg" alt="" />
+          </button>
+        </div>
+        <div class="f-item__body" data-acc-content>
+          <div class="f-item__content">
+            <p class="text">
+              Успешность ресторана, бара, клуба и кафе определяется сочетанием
+              широкого ряда параметров. Особое место среди них занимает
+              уникальность, привлекательность с точки зрения собственного стиля.
+              Современное понятие бренда включается в себя много составляющих,
+              но узнаваемость и индивидуальность остаются основными, стартовыми.
+              Мебель — это те предметы, с которыми посетитель вашего заведения
+              сталкивается сразу же при входе и далее контактирует в течение
+              всего времени посещения. От удобства, функциональности и эстетики
+              мебели зависит то впечатление, что будет основным, определяющим
+              дальнейшую привязку клиента к вашему бару или ресторану. Коллектив
+              InspireGroup разрабатывает уникальные варианты дизайна интерьера с
+              авторской мебелью — все предложенные решения не повторяются! Мы
+              разрабатываем не просто набор предметов — мы закладываем основу
+              бренда с самого начала и доводим все до полной готовности — под
+              ключ!
+            </p>
+
+            <div class="f-item__img">
+              <img src="./img/facts/01.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="facts__item f-item" data-acc-container="1">
+        <div class="f-item__header title4">
+          Компетенции дизайнеров InspireGroup — авторские разработки
+
+          <button class="btn-reset f-item__btn" data-acc-btn>
+            <img src="./img/plus.svg" alt="" />
+          </button>
+        </div>
+        <div class="f-item__body" data-acc-content>
+          <div class="f-item__content">
+            <p class="text">
+              Успешность ресторана, бара, клуба и кафе определяется сочетанием
+              широкого ряда параметров. Особое место среди них занимает
+              уникальность, привлекательность с точки зрения собственного стиля.
+              Современное понятие бренда включается в себя много составляющих,
+              но узнаваемость и индивидуальность остаются основными, стартовыми.
+              Мебель — это те предметы, с которыми посетитель вашего заведения
+              сталкивается сразу же при входе и далее контактирует в течение
+              всего времени посещения. От удобства, функциональности и эстетики
+              мебели зависит то впечатление, что будет основным, определяющим
+              дальнейшую привязку клиента к вашему бару или ресторану. Коллектив
+              InspireGroup разрабатывает уникальные варианты дизайна интерьера с
+              авторской мебелью — все предложенные решения не повторяются! Мы
+              разрабатываем не просто набор предметов — мы закладываем основу
+              бренда с самого начала и доводим все до полной готовности — под
+              ключ!
+            </p>
+
+            <div class="f-item__img">
+              <img src="./img/facts/01.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+ <section class="faq">
+  <div class="container">
+    <h4 class="subtitle faq__subtitle">вопросы</h4>
+    <h2 class="title2 faq__title">отвечаем на ваши вопросы</h2>
+
+    <ul class="list-reset faq__container">
+      <li class="faq__col">
+        <div class="faq__item" data-acc-container="1">
+          <div class="faq__header title5">
+            <div class="faq__quest">Что мы сделаем для Вас?</div>
+            <button class="btn-reset faq__btn" data-acc-btn>
+              <img src="./img/plus.svg" alt="" />
+            </button>
+          </div>
+          <div class="faq__body" data-acc-content>
+            <div class="faq__content">
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur nostrum commodi impedit accusantium molestias
+                expedita nihil perspiciatis eveniet reiciendis maxime quaerat
+                dolorem autem beatae, distinctio maiores eum ratione, quod
+                laudantium! Sint molestias delectus itaque, cumque
+                necessitatibus commodi quae, laborum dolorem vitae eaque
+                sapiente quis nobis tenetur qui ab blanditiis consequatur nemo
+                hic aperiam. Officia sit nisi eius quas adipisci accusantium
+                fugit optio debitis laudantium delectus deserunt, explicabo
+                consectetur voluptates labore, necessitatibus qui molestiae ea
+                excepturi neque, facilis illo non quod. Quisquam, labore amet
+                culpa exercitationem corporis animi dolor earum deleniti
+                distinctio ratione, a ipsa tempore, quidem ex laborum doloremque
+                ut!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item" data-acc-container="1">
+          <div class="faq__header title5">
+            <div class="faq__quest">Что такое авторский дизайн заведения?</div>
+            <button class="btn-reset faq__btn" data-acc-btn>
+              <img src="./img/plus.svg" alt="" />
+            </button>
+          </div>
+          <div class="faq__body" data-acc-content>
+            <div class="faq__content">
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur nostrum commodi impedit accusantium molestias
+                expedita nihil perspiciatis eveniet reiciendis maxime quaerat
+                dolorem autem beatae, distinctio maiores eum ratione, quod
+                laudantium! Sint molestias delectus itaque, cumque
+                necessitatibus commodi quae, laborum dolorem vitae eaque
+                sapiente quis nobis tenetur qui ab blanditiis consequatur nemo
+                hic aperiam. Officia sit nisi eius quas adipisci accusantium
+                fugit optio debitis laudantium delectus deserunt, explicabo
+                consectetur voluptates labore, necessitatibus qui molestiae ea
+                excepturi neque, facilis illo non quod. Quisquam, labore amet
+                culpa exercitationem corporis animi dolor earum deleniti
+                distinctio ratione, a ipsa tempore, quidem ex laborum doloremque
+                ut!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item" data-acc-container="1">
+          <div class="faq__header title5">
+            <div class="faq__quest">
+              Что такое дизайн проект ресторана от компании InspireGroup?
+            </div>
+            <button class="btn-reset faq__btn" data-acc-btn>
+              <img src="./img/plus.svg" alt="" />
+            </button>
+          </div>
+          <div class="faq__body" data-acc-content>
+            <div class="faq__content">
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur nostrum commodi impedit accusantium molestias
+                expedita nihil perspiciatis eveniet reiciendis maxime quaerat
+                dolorem autem beatae, distinctio maiores eum ratione, quod
+                laudantium! Sint molestias delectus itaque, cumque
+                necessitatibus commodi quae, laborum dolorem vitae eaque
+                sapiente quis nobis tenetur qui ab blanditiis consequatur nemo
+                hic aperiam. Officia sit nisi eius quas adipisci accusantium
+                fugit optio debitis laudantium delectus deserunt, explicabo
+                consectetur voluptates labore, necessitatibus qui molestiae ea
+                excepturi neque, facilis illo non quod. Quisquam, labore amet
+                culpa exercitationem corporis animi dolor earum deleniti
+                distinctio ratione, a ipsa tempore, quidem ex laborum doloremque
+                ut!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item" data-acc-container="1">
+          <div class="faq__header title5">
+            <div class="faq__quest">
+              Сколько времени занимает разработка дизайн проекта ресторана?
+            </div>
+            <button class="btn-reset faq__btn" data-acc-btn>
+              <img src="./img/plus.svg" alt="" />
+            </button>
+          </div>
+          <div class="faq__body" data-acc-content>
+            <div class="faq__content">
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur nostrum commodi impedit accusantium molestias
+                expedita nihil perspiciatis eveniet reiciendis maxime quaerat
+                dolorem autem beatae, distinctio maiores eum ratione, quod
+                laudantium! Sint molestias delectus itaque, cumque
+                necessitatibus commodi quae, laborum dolorem vitae eaque
+                sapiente quis nobis tenetur qui ab blanditiis consequatur nemo
+                hic aperiam. Officia sit nisi eius quas adipisci accusantium
+                fugit optio debitis laudantium delectus deserunt, explicabo
+                consectetur voluptates labore, necessitatibus qui molestiae ea
+                excepturi neque, facilis illo non quod. Quisquam, labore amet
+                culpa exercitationem corporis animi dolor earum deleniti
+                distinctio ratione, a ipsa tempore, quidem ex laborum doloremque
+                ut!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item" data-acc-container="1">
+          <div class="faq__header title5">
+            <div class="faq__quest">Делаете ли вы фото объекта до и после?</div>
+            <button class="btn-reset faq__btn" data-acc-btn>
+              <img src="./img/plus.svg" alt="" />
+            </button>
+          </div>
+          <div class="faq__body" data-acc-content>
+            <div class="faq__content">
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur nostrum commodi impedit accusantium molestias
+                expedita nihil perspiciatis eveniet reiciendis maxime quaerat
+                dolorem autem beatae, distinctio maiores eum ratione, quod
+                laudantium! Sint molestias delectus itaque, cumque
+                necessitatibus commodi quae, laborum dolorem vitae eaque
+                sapiente quis nobis tenetur qui ab blanditiis consequatur nemo
+                hic aperiam. Officia sit nisi eius quas adipisci accusantium
+                fugit optio debitis laudantium delectus deserunt, explicabo
+                consectetur voluptates labore, necessitatibus qui molestiae ea
+                excepturi neque, facilis illo non quod. Quisquam, labore amet
+                culpa exercitationem corporis animi dolor earum deleniti
+                distinctio ratione, a ipsa tempore, quidem ex laborum doloremque
+                ut!
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="faq__col">
+        <div class="faq__item" data-acc-container="1">
+          <div class="faq__header title5">
+            <div class="faq__quest">
+              Разрабатываете ли Вы 3d визуализацию проекта?
+            </div>
+            <button class="btn-reset faq__btn" data-acc-btn>
+              <img src="./img/plus.svg" alt="" />
+            </button>
+          </div>
+          <div class="faq__body" data-acc-content>
+            <div class="faq__content">
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur nostrum commodi impedit accusantium molestias
+                expedita nihil perspiciatis eveniet reiciendis maxime quaerat
+                dolorem autem beatae, distinctio maiores eum ratione, quod
+                laudantium! Sint molestias delectus itaque, cumque
+                necessitatibus commodi quae, laborum dolorem vitae eaque
+                sapiente quis nobis tenetur qui ab blanditiis consequatur nemo
+                hic aperiam. Officia sit nisi eius quas adipisci accusantium
+                fugit optio debitis laudantium delectus deserunt, explicabo
+                consectetur voluptates labore, necessitatibus qui molestiae ea
+                excepturi neque, facilis illo non quod. Quisquam, labore amet
+                culpa exercitationem corporis animi dolor earum deleniti
+                distinctio ratione, a ipsa tempore, quidem ex laborum doloremque
+                ut!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" data-acc-container="1">
+          <div class="faq__header title5">
+            <div class="faq__quest">Делаете ли вы планировочное решение?</div>
+            <button class="btn-reset faq__btn" data-acc-btn>
+              <img src="./img/plus.svg" alt="" />
+            </button>
+          </div>
+          <div class="faq__body" data-acc-content>
+            <div class="faq__content">
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur nostrum commodi impedit accusantium molestias
+                expedita nihil perspiciatis eveniet reiciendis maxime quaerat
+                dolorem autem beatae, distinctio maiores eum ratione, quod
+                laudantium! Sint molestias delectus itaque, cumque
+                necessitatibus commodi quae, laborum dolorem vitae eaque
+                sapiente quis nobis tenetur qui ab blanditiis consequatur nemo
+                hic aperiam. Officia sit nisi eius quas adipisci accusantium
+                fugit optio debitis laudantium delectus deserunt, explicabo
+                consectetur voluptates labore, necessitatibus qui molestiae ea
+                excepturi neque, facilis illo non quod. Quisquam, labore amet
+                culpa exercitationem corporis animi dolor earum deleniti
+                distinctio ratione, a ipsa tempore, quidem ex laborum doloremque
+                ut!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" data-acc-container="1">
+          <div class="faq__header title5">
+            <div class="faq__quest">Какие сроки исполнения дизайн-проекта?</div>
+            <button class="btn-reset faq__btn" data-acc-btn>
+              <img src="./img/plus.svg" alt="" />
+            </button>
+          </div>
+          <div class="faq__body" data-acc-content>
+            <div class="faq__content">
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur nostrum commodi impedit accusantium molestias
+                expedita nihil perspiciatis eveniet reiciendis maxime quaerat
+                dolorem autem beatae, distinctio maiores eum ratione, quod
+                laudantium! Sint molestias delectus itaque, cumque
+                necessitatibus commodi quae, laborum dolorem vitae eaque
+                sapiente quis nobis tenetur qui ab blanditiis consequatur nemo
+                hic aperiam. Officia sit nisi eius quas adipisci accusantium
+                fugit optio debitis laudantium delectus deserunt, explicabo
+                consectetur voluptates labore, necessitatibus qui molestiae ea
+                excepturi neque, facilis illo non quod. Quisquam, labore amet
+                culpa exercitationem corporis animi dolor earum deleniti
+                distinctio ratione, a ipsa tempore, quidem ex laborum doloremque
+                ut!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" data-acc-container="1">
+          <div class="faq__header title5">
+            <div class="faq__quest">Есть ли у вас свои строители?</div>
+            <button class="btn-reset faq__btn" data-acc-btn>
+              <img src="./img/plus.svg" alt="" />
+            </button>
+          </div>
+          <div class="faq__body" data-acc-content>
+            <div class="faq__content">
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur nostrum commodi impedit accusantium molestias
+                expedita nihil perspiciatis eveniet reiciendis maxime quaerat
+                dolorem autem beatae, distinctio maiores eum ratione, quod
+                laudantium! Sint molestias delectus itaque, cumque
+                necessitatibus commodi quae, laborum dolorem vitae eaque
+                sapiente quis nobis tenetur qui ab blanditiis consequatur nemo
+                hic aperiam. Officia sit nisi eius quas adipisci accusantium
+                fugit optio debitis laudantium delectus deserunt, explicabo
+                consectetur voluptates labore, necessitatibus qui molestiae ea
+                excepturi neque, facilis illo non quod. Quisquam, labore amet
+                culpa exercitationem corporis animi dolor earum deleniti
+                distinctio ratione, a ipsa tempore, quidem ex laborum doloremque
+                ut!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" data-acc-container="1">
+          <div class="faq__header title5">
+            <div class="faq__quest">Занимаетесь ли вы закупками под ключ?</div>
+            <button class="btn-reset faq__btn" data-acc-btn>
+              <img src="./img/plus.svg" alt="" />
+            </button>
+          </div>
+          <div class="faq__body" data-acc-content>
+            <div class="faq__content">
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur nostrum commodi impedit accusantium molestias
+                expedita nihil perspiciatis eveniet reiciendis maxime quaerat
+                dolorem autem beatae, distinctio maiores eum ratione, quod
+                laudantium! Sint molestias delectus itaque, cumque
+                necessitatibus commodi quae, laborum dolorem vitae eaque
+                sapiente quis nobis tenetur qui ab blanditiis consequatur nemo
+                hic aperiam. Officia sit nisi eius quas adipisci accusantium
+                fugit optio debitis laudantium delectus deserunt, explicabo
+                consectetur voluptates labore, necessitatibus qui molestiae ea
+                excepturi neque, facilis illo non quod. Quisquam, labore amet
+                culpa exercitationem corporis animi dolor earum deleniti
+                distinctio ratione, a ipsa tempore, quidem ex laborum doloremque
+                ut!
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="design">
+  <div class="design__container container-right">
+    <div class="design__image">
+      <img src="./img/design.webp" alt="" />
+    </div>
+
+    <div class="design__content">
+      <h2 class="title2 design__title">
+        проектирование
+        <span>помещений под ключ</span>
+      </h2>
+      <p class="text design__desc">
+        Авторский дизайн проект ресторана это произведение искусства, в котором
+        воплощен творческий замысел разработчика. Он строится на основании
+        полученного от заказчика технического задания, исследования объекта и
+        образа, который возник у дизайнера. Компания InspireGroup это группа
+        разработчиков дизайна, основные идеи которого зарождаются у Инессы
+        Костиной, ведущего дизайнера и руководителя проектов. Дизайн соединение
+        технических, инженерных, архитектурных, функциональных и эстетических
+        решений, разработка, результатом которой становится полностью готовый
+        проект, учитывающий все тонкости и особенности определенного объекта.
+        Разработка дизайна ресторана это формирование комплекса решений,
+        позволяющих создать гармоничное сочетание функциональности и эстетики. В
+        этом сплаве технической мысли и искусства огромную роль играет
+        творческое начало создателя проекта, который первоначально создает в
+        воображении образ объекта, переводит его в эскизы, чертежи и сметы,
+        наблюдает за реализацией и принимает в окончательном виде для передачи
+        заказчику.
+      </p>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a href="#" class="footer__logo">
+        <img src="./img/logo.webp" alt="" />
+      </a>
+
+      <nav class="footer__nav nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">наши проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">цены</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">видео</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">блог</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-reset footer__btn btn--trans">
+        рассчитать стоимость
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.51527 13.5422C7.45512 13.6058 7.4081 13.6807 7.37689 13.7625C7.34568 13.8443 7.33089 13.9315 7.33337 14.019C7.33584 14.1066 7.35554 14.1927 7.39132 14.2727C7.42711 14.3526 7.47829 14.4247 7.54193 14.4848C7.60558 14.545 7.68045 14.592 7.76227 14.6232C7.84409 14.6544 7.93126 14.6692 8.01879 14.6667C8.10633 14.6642 8.19252 14.6446 8.27244 14.6088C8.35236 14.573 8.42446 14.5218 8.4846 14.4582L14.1513 8.45816C14.2683 8.33438 14.3335 8.1705 14.3335 8.00016C14.3335 7.82982 14.2683 7.66594 14.1513 7.54216L8.4846 1.54149C8.42485 1.47645 8.35278 1.42393 8.27256 1.38698C8.19234 1.35003 8.10558 1.32939 8.01732 1.32625C7.92905 1.32312 7.84105 1.33755 7.75841 1.36872C7.67577 1.39988 7.60015 1.44715 7.53594 1.50779C7.47172 1.56842 7.4202 1.64122 7.38435 1.72193C7.34851 1.80265 7.32906 1.88969 7.32714 1.97798C7.32521 2.06628 7.34086 2.15408 7.37315 2.23628C7.40545 2.31849 7.45375 2.39345 7.51527 2.45683L12.7499 8.00016L7.51527 13.5422Z"
+            fill="#464330"
+          />
+        </svg>
+      </a>
+    </div>
+    <div class="footer__bottom">
+      <nav class="footer__accords">
+        <ul class="list-reset footer__list">
+          <li class="footer__item footer-item">
+            <div class="footer-item__page">
+              Дизайн-проекты<br />коммерческих помещений ▼
+            </div>
+            <ul class="list-reset">
+              <li><a href="#">Дизайн проект летнего кафе</a></li>
+              <li><a href="#">Разработка концепции ресторана</a></li>
+              <li><a href="#">Дизайн квартиры п44т</a></li>
+              <li><a href="#">Ресторан под ключ</a></li>
+              <li><a href="#">Строительство бара</a></li>
+              <li><a href="#">Дизайн проект гостиницы</a></li>
+              <li><a href="#">Дизайн проект дома отдыха</a></li>
+              <li><a href="#">Дизайн проект коттеджа</a></li>
+              <li><a href="#">Дизайн проект санатория</a></li>
+              <li><a href="#">Дизайн проект дачного дома</a></li>
+              <li><a href="#">Открыть бар с нуля</a></li>
+              <li><a href="#">Дизайн проект спа</a></li>
+              <li><a href="#">Дизайн проект салона красоты</a></li>
+              <li><a href="#">Дизайн проект бара</a></li>
+              <li><a href="#">Дизайн проект фитнес клуба</a></li>
+              <li><a href="#">Дизайн проект караоке</a></li>
+              <li><a href="#">Дизайн винного погреба</a></li>
+              <li><a href="#">Дизайн проект кафе</a></li>
+              <li><a href="#">Дизайн проект клуба</a></li>
+              <li><a href="#">Дизайн проект магазина</a></li>
+              <li><a href="#">Дизайн паба</a></li>
+              <li><a href="#">Дизайн проект офиса</a></li>
+              <li><a href="#">Бар под ключ</a></li>
+              <li><a href="#">Дизайн проект бургерной</a></li>
+              <li><a href="#">Дизайн винного бутика под ключ</a></li>
+            </ul>
+          </li>
+          <li class="footer__item footer-item">
+            <div class="footer-item__page">
+              Дизайн-проекты<br />коммерческих помещений ▼
+            </div>
+            <ul class="list-reset">
+              <li><a href="">Дизайн проект таунхауса</a></li>
+              <li><a href="">Дизайн проект частного дома</a></li>
+              <li><a href="">Дизайн проект ресторана</a></li>
+              <li><a href="">Авторский дизайн интерьера</a></li>
+              <li><a href="">Открытие ресторана с нуля</a></li>
+              <li><a href="">Дизайн спорт бара</a></li>
+              <li><a href="">Дизайн ресторана в русском стиле</a></li>
+              <li><a href="">Дизайн ресторана в морском стиле</a></li>
+              <li><a href="">Дизайн бильярдного клуба</a></li>
+              <li><a href="">Дизайн интерьера ресторана</a></li>
+              <li><a href="">Дизайн проект развлекательных центров</a></li>
+              <li><a href="">Дизайн проект пивных баров</a></li>
+              <li><a href="">Дизайн проект трехкомнатной квартиры</a></li>
+              <li><a href="">Дизайн суши-бара под ключ</a></li>
+              <li><a href="">Дизайн восточного ресторана</a></li>
+              <li><a href="">Дизайн итальянского ресторана</a></li>
+              <li><a href="">Дизайн японских ресторанов</a></li>
+              <li><a href="">Дизайн ресторана в классическом стиле</a></li>
+              <li><a href="">Дизайн проект общественной бани</a></li>
+              <li><a href="">Дизайн ресторана лофт</a></li>
+              <li><a href="">Дизайн эко кафе под ключ</a></li>
+              <li><a href="">Пример готового дизайн проекта</a></li>
+              <li><a href="">Дизайн хай-тек ресторана</a></li>
+              <li><a href="">Дизайн проект кулинарии</a></li>
+              <li><a href="">Разработка концепции кафе</a></li>
+            </ul>
+          </li>
+          <li class="footer__item footer-item">
+            <div class="footer-item__page">
+              Основные<br />
+              услуги ▼
+            </div>
+            <ul class="list-reset">
+              <li><a href="">Дизайн проект таунхауса</a></li>
+              <li><a href="">Дизайн проект частного дома</a></li>
+              <li><a href="">Дизайн проект ресторана</a></li>
+              <li><a href="">Авторский дизайн интерьера</a></li>
+              <li><a href="">Открытие ресторана с нуля</a></li>
+              <li><a href="">Дизайн спорт бара</a></li>
+              <li><a href="">Дизайн ресторана в русском стиле</a></li>
+              <li><a href="">Дизайн ресторана в морском стиле</a></li>
+              <li><a href="">Дизайн бильярдного клуба</a></li>
+              <li><a href="">Дизайн интерьера ресторана</a></li>
+              <li><a href="">Дизайн проект развлекательных центров</a></li>
+              <li><a href="">Дизайн проект пивных баров</a></li>
+              <li><a href="">Дизайн проект трехкомнатной квартиры</a></li>
+              <li><a href="">Дизайн суши-бара под ключ</a></li>
+              <li><a href="">Дизайн восточного ресторана</a></li>
+              <li><a href="">Дизайн итальянского ресторана</a></li>
+              <li><a href="">Дизайн японских ресторанов</a></li>
+              <li><a href="">Дизайн ресторана в классическом стиле</a></li>
+              <li><a href="">Дизайн проект общественной бани</a></li>
+              <li><a href="">Дизайн ресторана лофт</a></li>
+              <li><a href="">Дизайн эко кафе под ключ</a></li>
+              <li><a href="">Пример готового дизайн проекта</a></li>
+              <li><a href="">Дизайн хай-тек ресторана</a></li>
+              <li><a href="">Дизайн проект кулинарии</a></li>
+              <li><a href="">Разработка концепции кафе</a></li>
+            </ul>
+          </li>
+          <li class="footer__item footer-item">
+            <div class="footer-item__page">
+              Дополнительные<br />услуги ▼
+            </div>
+            <ul class="list-reset">
+              <li><a href="#">Проектирование ресторана</a></li>
+              <li><a href="#">Дизайн проект сауны</a></li>
+              <li><a href="#">Дизайн проект турагентства</a></li>
+              <li><a href="#">Дизайн пятикомнатной квартиры</a></li>
+              <li><a href="#">Дизайн проект парикмахерской</a></li>
+              <li><a href="#">Дизайн проект косметологии</a></li>
+              <li><a href="#">Дизайн проект пекарни</a></li>
+              <li><a href="#">Дизайн проект антикафе</a></li>
+              <li><a href="#">Дизайн проект коворкинга</a></li>
+              <li><a href="#">Дизайн проект фудкорта</a></li>
+              <li><a href="#">Дизайн-проект кафетерия</a></li>
+              <li><a href="#">Концепция йога студии</a></li>
+              <li><a href="#">Дизайн барбершопа под ключ</a></li>
+              <li><a href="#">Дизайн квартиры 121 серии</a></li>
+              <li><a href="#">Дизайн проект элитного ресторана</a></li>
+              <li><a href="#">Дизайн элитного кафе</a></li>
+              <li><a href="#">Дизайн проект однокомнатной квартиры</a></li>
+              <li><a href="#">Дизайн столовых и заведений </a></li>
+              <li><a href="#">общественного питания</a></li>
+              <li><a href="#">Дизайн квартиры 137 серии</a></li>
+              <li><a href="#">Деревянные винные шкафы</a></li>
+              <li><a href="#">Дизайн ночного клуба</a></li>
+              <li><a href="#">Концепция магазина в торговом центре</a></li>
+              <li><a href="#">Дизайн летней веранды</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__right">
+        <div class="footer__socials">
+          <a href="#" class="footer__soc">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.5001 4.16675L1.66675 10.4167L7.50008 11.2501M17.5001 4.16675L15.4167 16.6667L7.50008 11.2501M17.5001 4.16675L7.50008 11.2501M7.50008 11.2501V15.8334L10.2076 13.1026"
+                stroke="#464330"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.00008 12.3334C9.88414 12.3334 10.732 11.9822 11.3571 11.3571C11.9822 10.732 12.3334 9.88414 12.3334 9.00008C12.3334 8.11603 11.9822 7.26818 11.3571 6.64306C10.732 6.01794 9.88414 5.66675 9.00008 5.66675C8.11603 5.66675 7.26818 6.01794 6.64306 6.64306C6.01794 7.26818 5.66675 8.11603 5.66675 9.00008C5.66675 9.88414 6.01794 10.732 6.64306 11.3571C7.26818 11.9822 8.11603 12.3334 9.00008 12.3334Z"
+                stroke="#464330"
+                stroke-width="1.875"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1.5 12.3333V5.66667C1.5 4.5616 1.93899 3.50179 2.72039 2.72039C3.50179 1.93899 4.5616 1.5 5.66667 1.5H12.3333C13.4384 1.5 14.4982 1.93899 15.2796 2.72039C16.061 3.50179 16.5 4.5616 16.5 5.66667V12.3333C16.5 13.4384 16.061 14.4982 15.2796 15.2796C14.4982 16.061 13.4384 16.5 12.3333 16.5H5.66667C4.5616 16.5 3.50179 16.061 2.72039 15.2796C1.93899 14.4982 1.5 13.4384 1.5 12.3333Z"
+                stroke="#464330"
+                stroke-width="1.5"
+              />
+              <path
+                d="M13.5833 4.42494L13.5916 4.41577"
+                stroke="#464330"
+                stroke-width="1.875"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg
+              width="20"
+              height="14"
+              viewBox="0 0 20 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.6667 6.99992L8.75 8.66659V5.33325L11.6667 6.99992Z"
+                fill="#464330"
+                stroke="#464330"
+                stroke-width="1.875"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1.66675 7.58992V6.40992C1.66675 3.99742 1.66675 2.79075 2.42091 2.01492C3.17591 1.23825 4.36425 1.20492 6.74008 1.13742C7.86508 1.10575 9.01508 1.08325 10.0001 1.08325C10.9851 1.08325 12.1342 1.10575 13.2601 1.13742C15.6359 1.20492 16.8242 1.23825 17.5784 2.01492C18.3326 2.79159 18.3334 3.99825 18.3334 6.40992V7.58908C18.3334 10.0024 18.3334 11.2083 17.5792 11.9849C16.8242 12.7608 15.6367 12.7949 13.2601 12.8616C12.1351 12.8941 10.9851 12.9166 10.0001 12.9166C9.01508 12.9166 7.86591 12.8941 6.74008 12.8616C4.36425 12.7949 3.17591 12.7616 2.42091 11.9849C1.66591 11.2083 1.66675 10.0016 1.66675 7.58992Z"
+                stroke="#464330"
+                stroke-width="1.5"
+              />
+            </svg>
+          </a>
+        </div>
+        <address class="footer__add">
+          <div class="footer__row">
+            <a href="tel:+74994993231" class="footer__link"
+              >+7 499 499-32-31</a
+            >
+            <a href="mailto:info@inspiregroup.pro" class="footer__link"
+              >info@inspiregroup.pro</a
+            >
+          </div>
+          <div class="footer__row">
+            <span class="footer__link">г. Москва, Волоколамское шоссе, 95</span>
+          </div>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer__extra">
+      <div class="footer__left">
+        <a href="#" class="text footer__text">Политика конфиденциальности</a>
+        <a href="#" class="text footer__text">Пользовательское Соглашение</a>
+      </div>
+
+      <small class="footer__text">©2024</small>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

@@ -2247,4 +2247,151 @@ a {
 }
 .blog-item__link {
   text-decoration: underline;
+}
+
+.single-hero {
+  padding: 12rem 0;
+}
+
+.sh h1 {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 4rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--grey1000);
+}
+.sh h1:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.sh h3 {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--grey1000);
+}
+.sh h3:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.sh h4 {
+  margin: 0;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--grey1000);
+}
+.sh h4:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.sh p,
+.sh ul,
+.sh ol {
+  margin: 0;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--grey1000);
+}
+.sh p:not(:last-child),
+.sh ul:not(:last-child),
+.sh ol:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.sh ul,
+.sh ol {
+  margin: 1rem 0;
+}
+.sh .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  min-height: 34rem;
+}
+.sh .row:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.sh .row .right {
+  position: relative;
+}
+.sh .row .right img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.sh .big-img {
+  width: 100%;
+  height: auto;
+}
+.sh .big-img:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.sh .big-img img {
+  width: 100%;
+  height: auto;
+}
+.sh .big-img__double {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  height: 79rem;
+}
+.sh .big-img__double img {
+  width: 100%;
+  height: 100%;
+}
+.sh .collage {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.sh .collage:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.sh .collage > div {
+  min-height: 72.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 5rem;
+}
+.sh .collage p span {
+  font-weight: 600;
+}
+.sh .collage p:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.sh .collage__img {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.sh .collage__img img {
+  width: 100%;
+  height: 100%;
+}
+.sh .block:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.sh .block p span {
+  font-weight: 600;
+}
+.sh .block p:not(:last-child) {
+  margin-bottom: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

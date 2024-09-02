@@ -1,0 +1,51 @@
+.blog-hero {
+  padding: 12rem 0;
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+}
+
+.blog-item {
+  &__body {
+    display: block;
+    position: relative;
+  }
+
+  &__img {
+    display: block;
+    height: 40rem;
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__name {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    width: 32.4rem;
+    padding-top: 2rem;
+    padding-right: 3rem;
+    background: var(--light1000);
+  }
+
+  &__desc {
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+}

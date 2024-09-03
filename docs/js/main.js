@@ -298,7 +298,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
 
 
-swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper.use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectFlip, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectFade, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Thumbs, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination]);
+swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper.use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectFlip, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectFade, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Thumbs, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Keyboard]);
 const projSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper('.working__slider', {
   slidesPerView: 1,
   spaceBetween: 40,
@@ -410,6 +410,34 @@ testiContainers.forEach(cont => {
       swiper: thumbs
     }
   });
+});
+const quizSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper('.quiz__slider', {
+  slidesPerView: 1,
+  spaceBetween: 40,
+  navigation: {
+    nextEl: '.quiz-next',
+    prevEl: '.quiz-prev'
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true
+  }
+});
+const quizControl = document.querySelector('.quiz-control');
+const slidesCount = document.querySelectorAll('.quiz__slider .swiper-slide').length;
+quizSlider.on('slideChange', swiper => {
+  if (swiper.activeIndex != 0 && swiper.activeIndex != slidesCount - 1) {
+    quizControl.classList.add('active');
+  } else {
+    quizControl.classList.remove('active');
+  }
+});
+quizSlider.on('keyPress', (swiper, keyCode) => {
+  switch (keyCode) {
+    case 13:
+      swiper.slideNext();
+      break;
+  }
 });
 
 

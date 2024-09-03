@@ -1,7 +1,7 @@
 import {Swiper} from 'swiper'
-import { Navigation, EffectFlip, EffectFade, Thumbs, Pagination } from 'swiper/modules'
+import { Navigation, EffectFlip, EffectFade, Thumbs, Pagination, Keyboard } from 'swiper/modules'
 
-Swiper.use([Navigation, EffectFlip, EffectFade, Thumbs, Pagination])
+Swiper.use([Navigation, EffectFlip, EffectFade, Thumbs, Pagination, Keyboard])
 
 
 const projSlider = new Swiper('.working__slider', {
@@ -148,9 +148,38 @@ testiContainers.forEach(cont => {
 
 
 
+const quizSlider = new Swiper('.quiz__slider', {
+  slidesPerView: 1,
+  spaceBetween: 40,
 
+  navigation: {
+    nextEl: '.quiz-next',
+    prevEl: '.quiz-prev',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+})
 
+const quizControl = document.querySelector('.quiz-control')
+const slidesCount = document.querySelectorAll('.quiz__slider .swiper-slide').length
 
+quizSlider.on('slideChange', swiper => {
+  if(swiper.activeIndex != 0 && swiper.activeIndex != slidesCount-1){
+    quizControl.classList.add('active')
+  } else {
+    quizControl.classList.remove('active')
+  }
+})
+
+quizSlider.on('keyPress', (swiper, keyCode) => {
+  switch (keyCode) {
+    case 13:
+      swiper.slideNext();
+      break;
+  }
+})
 
 
 

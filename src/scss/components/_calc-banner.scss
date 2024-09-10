@@ -2,13 +2,26 @@
   padding: 12rem 0;
   background: var(--grey300);
 
+  @include small-tablet {
+    padding: 6rem 0;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
 
+    @include small-tablet {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
     &:not(:last-child) {
       margin-bottom: 7.5rem;
+
+      @include small-tablet {
+        margin-bottom: 3rem;
+      }
     }
   }
 
@@ -17,9 +30,19 @@
   }
 
   &__title {
+    @include small-tablet {
+      text-align: center;
+      padding-right: 8rem;
+    }
+
     span {
       display: block;
       text-align: right;
+
+      @include small-tablet {
+        text-align: center;
+        margin-right: -22rem;
+      }
     }
   }
 
@@ -29,5 +52,9 @@
     font-weight: 500;
     font-size: 2rem;
     color: var(--grey1000);
+
+    @include small-tablet {
+      font-size: 1.6rem;
+    }
   }
 }

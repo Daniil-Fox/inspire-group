@@ -1,23 +1,47 @@
 .price-plan {
   padding: 12rem 0;
 
+  @include small-tablet {
+    padding: 6rem 0;
+  }
+
   &__title {
     margin-bottom: 4rem;
+
+    @include small-tablet {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__capture {
+    margin-bottom: 2rem;
   }
 
   &__content {
     padding: 5rem;
     background: #ded8cb;
+
+    @include small-tablet {
+      padding: 2rem;
+    }
   }
 
   &__body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
+
+    @include small-tablet {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
   }
 
   &__left {
     ul {
+      margin: 0;
+      padding-left: 2rem;
+
       li {
         font-family: var(--second-family);
         font-weight: 400;
@@ -37,14 +61,35 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
+
+    @include mobile {
+      align-items: stretch;
+    }
   }
 
   &__price {
     display: block;
+    margin-top: auto;
     margin-bottom: 2rem;
+
+    @include mobile {
+      order: -1;
+      font-size: 2rem;
+      text-align: center;
+    }
   }
 
   &__desc {
     color: var(--red1000);
+
+    @include mobile {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__btn {
+    @include mobile {
+      justify-content: center;
+    }
   }
 }

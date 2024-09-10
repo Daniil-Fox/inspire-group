@@ -308,7 +308,8 @@ const projSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper('.working__sli
     crossFade: true
   }
 });
-const portfolioSettings = {
+const portfolioName = document.querySelector('.portfolio__name');
+const portfolioSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper('.portfolio__slider', {
   slidesPerView: 1,
   spaceBetween: 40,
   speed: 400,
@@ -319,9 +320,22 @@ const portfolioSettings = {
   effect: 'fade',
   fadeEffect: {
     crossFade: true
+  },
+  on: {
+    slideChangeTransitionStart: swiper => {
+      if (portfolioName) {
+        portfolioName.style.opacity = 0;
+      }
+    },
+    slideChangeTransitionEnd: swiper => {
+      if (portfolioName) {
+        const active = swiper.hostEl.querySelector('.swiper-slide-active');
+        portfolioName.textContent = active.dataset.projectName ?? "Имя заведения";
+        portfolioName.style.opacity = 1;
+      }
+    }
   }
-};
-const portfolioSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper('.portfolio__slider', portfolioSettings);
+});
 const tabs = document.querySelectorAll('.portfolio__tab');
 const tabsContent = document.querySelectorAll('.portfolio__content');
 function clearActive() {
@@ -366,21 +380,14 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     }
   };
-
-  // resizableSwiper(
-  //   '(max-width: 1280px)',
-  //   '.slider-1',
-  //   {
-  //     loop: true,
-  //     spaceBetween: 32,
-  //     slidesPerView: 1,
-  //     pagination: {
-  //       el: '.swiper-pagination',
-  //       clickable: true,
-  //     },
-  //   },
-  //   someFunc
-  // );
+  resizableSwiper('(max-width: 576px)', '.other__slider', {
+    spaceBetween: 16,
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.other-pagination',
+      clickable: true
+    }
+  }, someFunc);
 });
 const testiItems = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper('.testi__items', {
   slidesPerView: 1,
@@ -10940,6 +10947,22 @@ window.addEventListener('scroll', e => {
     header.classList.remove('scroll');
   }
 });
+const portfolioItems = document.querySelectorAll('.ph-item');
+if (portfolioItems.length > 0) {
+  const observer = new IntersectionObserver((entries, observer) => {
+    const info = entries[0].target.querySelector('.ph-item__info');
+    if (entries[0].isIntersecting) {
+      info.classList.add('active');
+    } else {
+      info.classList.remove('active');
+    }
+  }, {
+    threshold: [0.3, 1]
+  });
+  portfolioItems.forEach(el => {
+    observer.observe(el);
+  });
+}
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map

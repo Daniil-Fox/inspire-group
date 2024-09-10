@@ -1,18 +1,39 @@
 .project-ph {
   padding-bottom: 12rem;
 
+  @include small-tablet {
+    padding-bottom: 6rem;
+  }
+
   &__row {
     display: flex;
     gap: 4rem;
 
     &:not(:last-child) {
       margin-bottom: 4rem;
+
+      @include small-tablet {
+        margin-bottom: 3rem;
+      }
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 3rem;
     }
   }
 
   &__img {
     flex: 1;
     height: 90rem;
+
+    @include small-tablet {
+      height: 40rem;
+    }
+
+    @include mobile {
+      height: 25rem;
+    }
 
     img {
       width: 100%;

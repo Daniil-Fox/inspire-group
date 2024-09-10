@@ -1,5 +1,5 @@
 .hero {
-  min-height: 118rem;
+  height: 100vh;
 
   background-image: url('./../img/hero-2x.webp');
   background-size: cover;
@@ -13,6 +13,10 @@
     background-image: url('./../img/hero.webp');
   }
 
+  @include small-tablet {
+    background-position: 60%;
+  }
+
   &__container {
     padding-bottom: 10rem;
     flex-grow: 1;
@@ -21,6 +25,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    @include small-tablet {
+      padding-bottom: 4rem;
+    }
   }
 
   &__content {
@@ -28,6 +36,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: stretch;
+    }
   }
 
   &__subtitle {
@@ -37,15 +50,36 @@
     font-weight: 600;
     font-size: 2rem;
     color: var(--light1000);
+
+    @include tablet {
+      font-size: 1.8rem;
+    }
+
+    @include small-tablet {
+      font-size: 1.6rem;
+
+    }
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__title {
     margin: 0;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 4.8rem;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--light1000);
+
+    @include tablet {
+      font-size: 4.2rem;
+    }
+
+    @include small-tablet {
+      font-size: 3.2rem;
+    }
   }
 
   &__left {

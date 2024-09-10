@@ -2,13 +2,25 @@
   padding: 12rem 0;
   background: var(--grey300);
 
+  @include small-tablet {
+    padding: 6rem 0;
+  }
+
   &__title {
     margin-bottom: 2rem;
+
+    @include small-tablet {
+      margin-bottom: 1rem;
+    }
   }
 
   &__desc {
     &:not(:last-child) {
       margin-bottom: 2rem;
+
+      @include small-tablet {
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -19,6 +31,10 @@
   }
 
   &__list {
+    margin: 0;
+    padding: 0;
+    padding-left: 2rem;
+
     &:not(:last-child) {
       margin-bottom: 1rem;
     }

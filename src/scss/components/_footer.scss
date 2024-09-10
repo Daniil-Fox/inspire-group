@@ -10,12 +10,20 @@
     justify-content: space-between;
 
     margin-bottom: 3rem;
+
+    @include small-tablet {
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+    }
   }
 
   &__logo {
     display: block;
     width: 18rem;
     height: 4rem;
+    height: auto;
+    flex-shrink: 0;
 
     img {
       width: 100%;
@@ -45,12 +53,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include small-tablet {
+      padding-top: 1.4rem;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
   }
 
   &__left {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 3rem;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+      gap: .6rem;
+    }
   }
 
   &__bottom {
@@ -60,10 +80,24 @@
     gap: 2rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    @include small-tablet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      gap: 3rem;
+    }
   }
+
+
 
   &__right {
     max-width: 30rem;
+
+    @include small-tablet {
+      max-width: 100%;
+      text-align: center;
+    }
   }
 
   &__socials {
@@ -73,6 +107,10 @@
     gap: 2rem;
 
     margin-bottom: 2rem;
+
+    @include small-tablet {
+      justify-content: center;
+    }
   }
 
   &__soc {
@@ -101,6 +139,16 @@
 
     &:not(:last-child) {
       margin-bottom: 2rem;
+
+      @include small-tablet {
+        margin-bottom: 3rem;
+      }
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
     }
   }
 
@@ -108,11 +156,23 @@
     font-weight: 400;
     font-size: 1.6rem;
     color: var(--grey1000);
+
+    @include small-tablet {
+      font-weight: 600;
+    }
   }
 
   &__accords {
     width: 100%;
     max-width: 88rem;
+
+    @include tablet {
+      max-width: 81rem;
+    }
+
+    @include small-tablet {
+      max-width: 100%;
+    }
   }
 
   &__list {
@@ -120,6 +180,22 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 2rem;
+
+    @include small-tablet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      text-align: center;
+      gap: 3rem;
+    }
+  }
+
+  &__nav {
+    .nav__list {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
@@ -139,7 +215,8 @@
   &>ul {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     will-change: max-height;
 
     max-height: 0;
@@ -169,6 +246,12 @@
       left: unset;
       right: 0;
       text-align: right;
+
+      @include small-tablet {
+        right: unset;
+        left: 50%;
+        text-align: center;
+      }
     }
   }
 }

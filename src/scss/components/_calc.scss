@@ -1,16 +1,43 @@
 .calc {
   padding: 12rem 0;
 
+  @include small-tablet {
+    padding: 6rem 0;
+  }
+
   &__container {
     padding-right: calc((100% - var(--container-width)) / 2);
     display: flex;
     align-items: center;
     gap: 4rem;
+
+    @include tablet {
+      padding: 0 var(--container-offset);
+    }
+
+    @include small-tablet {
+      display: block;
+      padding: 0;
+    }
   }
 
   &__image {
     width: 55%;
     height: auto;
+
+    @include small-tablet {
+      display: none;
+      margin-bottom: 2rem;
+    }
+
+    &--mob {
+      display: none;
+
+      @include small-tablet {
+        display: block;
+        width: 100%;
+      }
+    }
 
     img {
       width: 100%;
@@ -21,6 +48,10 @@
     flex-grow: 1;
     width: 100%;
     max-width: 58rem;
+
+    @include small-tablet {
+      max-width: 100%;
+    }
   }
 
   &__title {
@@ -28,14 +59,57 @@
     margin-bottom: 2rem;
     padding-right: 2.6rem;
 
+    @include small-tablet {
+      text-align: center;
+      padding: 0 var(--container-offset);
+    }
+
+    @include mobile {
+      padding-right: 0;
+      text-align: left;
+    }
+
     span {
       display: block;
       text-align: right;
       margin-right: -2.6rem;
+
+      @include small-tablet {
+        text-align: center;
+        margin-right: -28rem;
+        padding: 0 var(--container-offset);
+      }
+
+      @include mobile {
+        margin-right: 0;
+        text-align: right;
+      }
     }
   }
 
   &__desc {
     margin-bottom: 5rem;
+
+    @include small-tablet {
+      padding: 0 var(--container-offset);
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__bottom {
+    @include small-tablet {
+      padding: 0 var(--container-offset);
+    }
+
+    @include mobile {
+      display: flex;
+    }
+  }
+
+  &__btn {
+    @include mobile {
+      width: 100%;
+      justify-content: center;
+    }
   }
 }

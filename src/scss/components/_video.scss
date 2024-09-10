@@ -1,14 +1,32 @@
 .video-hero {
   padding: 12rem 0;
 
+  @include small-tablet {
+    padding: 6rem 0;
+    padding-top: 10rem;
+  }
+
   &__title {
     margin-bottom: 4rem;
+
+    @include small-tablet {
+      margin-bottom: 3rem;
+    }
   }
 
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
+
+    @include small-tablet {
+      gap: 1.5rem;
+    }
+
+    @include mobile {
+      gap: 2rem;
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
@@ -29,22 +47,43 @@
   padding: 10rem 0;
   padding-top: 0;
 
+  @include small-tablet {
+    padding-bottom: 6rem;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
     gap: 4rem;
+
+    @include small-tablet {
+      gap: 2rem;
+    }
+
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__title {
     padding-right: 7.6rem;
     text-align: right;
 
+    @include small-tablet {
+      padding-right: 0;
+    }
+
     span {
       display: block;
       text-align: right;
       margin-right: -7.6rem;
+
+      @include small-tablet {
+        margin-right: -3rem;
+      }
     }
   }
 }

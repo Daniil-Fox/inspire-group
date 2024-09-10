@@ -2,8 +2,16 @@
   padding: 12rem 0;
   background: var(--grey300);
 
+  @include small-tablet {
+    padding: 6rem 0;
+  }
+
   &__title {
     margin-bottom: 8rem;
+
+    @include small-tablet {
+      margin-bottom: 3rem;
+    }
   }
 
   &__slider {
@@ -20,6 +28,30 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
     align-items: center;
+
+    @include small-tablet {
+      display: block;
+    }
+  }
+
+  &__items {
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__item {
+    @include small-tablet {
+      display: none;
+    }
+
+    &--slider {
+      display: none;
+
+      @include small-tablet {
+        display: block;
+      }
+    }
   }
 
   &__img {
@@ -37,6 +69,10 @@
     padding-bottom: 2rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid var(--grey1000);
+
+    @include small-tablet {
+      padding-bottom: 1.5rem;
+    }
   }
 
   &__header {
@@ -71,6 +107,10 @@
 
   &__content {
     padding-top: 2rem;
+
+    @include small-tablet {
+      padding-top: 1.5rem;
+    }
   }
 
   &.active {

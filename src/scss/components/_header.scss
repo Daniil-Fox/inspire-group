@@ -16,20 +16,58 @@
 
   &__logo {
     width: 18rem;
-    height: 4rem;
     mix-blend-mode: exclusion;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @include small-tablet {
+      width: 14rem;
+    }
+
+    @include mobile {
+      width: 11.6rem;
+    }
   }
 
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
   }
 
   &__soc {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+
+
+  }
+
+  &__nav {
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 2rem;
+    height: 1.5rem;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__tel {
@@ -37,5 +75,13 @@
     font-size: 2rem;
     text-transform: uppercase;
     color: var(--grey1000);
+
+    @include small-tablet {
+      font-size: 1.6rem;
+    }
+
+    @include mobile {
+      font-size: 1.4rem;
+    }
   }
 }

@@ -3,11 +3,20 @@
   background: var(--grey300);
   --item-height: unset;
 
+  @include small-tablet {
+    padding: 6rem 0;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: 4rem;
+
+    @include small-tablet {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
   }
 
   &__col {
@@ -25,6 +34,10 @@
 
   &__title {
     margin-bottom: 4rem;
+
+    @include small-tablet {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__item {
@@ -35,6 +48,10 @@
 
   &__quest {
     text-transform: initial;
+
+    @include mobile {
+      font-size: 1.6rem;
+    }
   }
 
   &__body {

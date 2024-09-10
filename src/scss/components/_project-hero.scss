@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @include small-tablet {
+    padding: 4rem 0;
+  }
+
   &__img {
     position: absolute;
     z-index: -1;
@@ -39,12 +43,21 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    @include small-tablet {
+      align-items: center;
+    }
   }
 
   &__bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 3rem;
+    }
   }
 
   &__title {

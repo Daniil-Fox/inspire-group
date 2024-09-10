@@ -2,18 +2,37 @@
   padding: 12rem 0;
   background: var(--grey300);
 
+  @include small-tablet {
+    padding: 6rem 0;
+  }
+
   &__title {
     margin-bottom: 4rem;
+
+    @include small-tablet {
+      margin-bottom: 3rem;
+    }
   }
 
   &__item {
     .p-table__header {
       justify-content: space-between;
+
+      @include small-tablet {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
     }
 
     .p-table__name,
     .p-table__cost {
       width: unset;
+    }
+
+    .p-table__name {
+      @include small-tablet {
+        width: 100%;
+      }
     }
   }
 }

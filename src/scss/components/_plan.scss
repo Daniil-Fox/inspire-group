@@ -2,6 +2,10 @@
   padding: 12rem 0;
   background: #edebdd;
 
+  @include small-tablet {
+    padding: 6rem 0;
+  }
+
   &__title {
     margin-bottom: 4rem;
   }
@@ -17,6 +21,17 @@
     justify-content: center;
     align-items: center;
     counter-reset: count 0;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__btn {
+    @include mobile {
+      width: 100%;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -36,6 +51,13 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: var(--grey1000);
+
+      @include mobile {
+        left: 50%;
+        top: 0;
+        padding: .6rem 1.8rem;
+        font-size: 24px;
+      }
     }
   }
 }
@@ -45,8 +67,17 @@
   padding: 5.4rem 4.5rem;
   border: 1px solid var(--red1000);
 
+  @include mobile {
+    padding: 3rem;
+  }
 
   &__capture {
     margin-bottom: 2rem;
+    font-size: 2rem;
+
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
   }
 }

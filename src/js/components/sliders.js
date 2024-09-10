@@ -14,7 +14,9 @@ const projSlider = new Swiper('.working__slider', {
   }
 })
 
-const portfolioSettings = {
+const portfolioName = document.querySelector('.portfolio__name')
+
+const portfolioSlider = new Swiper('.portfolio__slider', {
   slidesPerView: 1,
   spaceBetween: 40,
   speed: 400,
@@ -25,10 +27,25 @@ const portfolioSettings = {
   effect: 'fade',
   fadeEffect: {
     crossFade: true
+  },
+  on: {
+    slideChangeTransitionStart: swiper => {
+      if(portfolioName){
+        portfolioName.style.opacity = 0
+      }
+    },
+    slideChangeTransitionEnd: swiper => {
+      if(portfolioName){
+         const active = swiper.hostEl.querySelector('.swiper-slide-active')
+        portfolioName.textContent = active.dataset.projectName ?? "Имя заведения"
+        portfolioName.style.opacity = 1
+      }
+    }
   }
-}
+})
 
-const portfolioSlider = new Swiper('.portfolio__slider', portfolioSettings)
+
+
 
 const tabs = document.querySelectorAll('.portfolio__tab')
 const tabsContent = document.querySelectorAll('.portfolio__content')
@@ -53,7 +70,6 @@ tabs.forEach(t => {
 
   })
 })
-
 
 
 
@@ -93,20 +109,19 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // resizableSwiper(
-  //   '(max-width: 1280px)',
-  //   '.slider-1',
-  //   {
-  //     loop: true,
-  //     spaceBetween: 32,
-  //     slidesPerView: 1,
-  //     pagination: {
-  //       el: '.swiper-pagination',
-  //       clickable: true,
-  //     },
-  //   },
-  //   someFunc
-  // );
+  resizableSwiper(
+    '(max-width: 576px)',
+    '.other__slider',
+    {
+      spaceBetween: 16,
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.other-pagination',
+        clickable: true,
+      },
+    },
+    someFunc
+  );
 });
 
 

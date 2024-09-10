@@ -10948,7 +10948,7 @@ window.addEventListener('scroll', e => {
   }
 });
 const portfolioItems = document.querySelectorAll('.ph-item');
-if (portfolioItems.length > 0) {
+if (portfolioItems.length > 0 && window.matchMedia("(max-width: 1024px)").matches) {
   const observer = new IntersectionObserver((entries, observer) => {
     const info = entries[0].target.querySelector('.ph-item__info');
     if (entries[0].isIntersecting) {

@@ -27,3 +27,18 @@ if(portfolioItems.length > 0 && window.matchMedia("(max-width: 1024px)").matches
     observer.observe(el)
   })
 }
+
+
+
+const menuBtn = document.querySelector('.header__burger')
+
+if(menuBtn){
+  const menu = document.querySelector('.menu')
+
+  menuBtn.addEventListener('click', e => {
+    e.preventDefault()
+
+    menu.classList.toggle('active')
+    menuBtn.classList.toggle('active')
+  })
+}

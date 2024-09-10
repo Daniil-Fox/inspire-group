@@ -14,6 +14,58 @@
     backdrop-filter: blur(0.625rem);
   }
 
+  &__burger {
+
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 30px;
+    height: 18px;
+
+
+    display: none;
+
+    @include small-tablet {
+      display: flex;
+    }
+
+    .line {
+      width: 100%;
+      height: 1.7px;
+      background-color: var(--grey1000);
+      flex-shrink: 0;
+      transition: .3s ease-out;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      width: 100%;
+      height: 1.7px;
+      background-color: var(--grey1000);
+
+      transition: .3s ease-out;
+    }
+
+
+
+    &.active {
+      .line {
+        opacity: 0;
+      }
+
+      &::before {
+        transform: rotate(-45deg) translateY(11px);
+      }
+
+      &::after {
+        transform: rotate(45deg) translateY(-11px);
+      }
+    }
+  }
+
   &__logo {
     width: 18rem;
     mix-blend-mode: exclusion;

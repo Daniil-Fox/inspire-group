@@ -4882,4 +4882,43 @@ input[type=radio]:checked + .quiz__radio::after {
 .menu__link svg {
   width: 100%;
   height: 100%;
+}
+
+.thankyou__container {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3rem;
+}
+.thankyou__img {
+  position: relative;
+  height: 100%;
+}
+.thankyou__img img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-position: bottom right;
+  object-position: bottom right;
+}
+.thankyou__title {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--grey1000);
+}
+.thankyou__title a {
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: var(--red1000);
 }/*# sourceMappingURL=main.css.map */

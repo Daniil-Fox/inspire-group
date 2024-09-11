@@ -6006,7 +6006,7 @@ function setValidation(validator, rules, checks, phoneSelector, afterSend) {
           if (afterSend) {
             afterSend();
           }
-          console.log('Отправлено');
+          location.href = './thankyou.html';
         }
       }
     };

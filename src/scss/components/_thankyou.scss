@@ -1,0 +1,40 @@
+.thankyou {
+  &__container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__img {
+    position: relative;
+    height: 100%;
+
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-position: bottom right;
+    }
+  }
+
+  &__content {}
+
+  &__title {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 133%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--grey1000);
+
+    a {
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: var(--red1000);
+    }
+  }
+}

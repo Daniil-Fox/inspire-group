@@ -1,0 +1,85 @@
+<div class="quiz-soc">
+  <div class="quiz-soc__body active" data-soc-page="1">
+    <div class="quiz-soc__title title2">Мессенджер</div>
+
+    <div class="quiz-soc__row">
+      <label for="whatsapp" class="quiz-soc__item" data-value="whatsapp">
+        <div class="quiz-soc__icon">
+          <img src="./img/whatsapp.svg" alt="" />
+        </div>
+        <span>Whatsapp</span>
+      </label>
+      <label for="tel" class="quiz-soc__item" data-value="телефон">
+        <div class="quiz-soc__icon">
+          <img src="./img/tel.svg" alt="" />
+        </div>
+        <span>Телефон</span>
+      </label>
+    </div>
+
+    <div class="quiz-soc__back quiz-soc__backall text">Вернуться назад</div>
+  </div>
+  <div class="quiz-soc__body" data-soc-page="2">
+    <div class="quiz-soc__title title2">Введите телефон <span></span></div>
+    <div class="quiz-soc__choice"></div>
+    <input
+      type="radio"
+      name="Способ связи"
+      value="Whatsapp"
+      id="whatsapp"
+      class="visually-hidden"
+    />
+    <input
+      type="radio"
+      name="Способ связи"
+      value="Телефон"
+      id="tel"
+      class="visually-hidden"
+    />
+    <label class="quiz-form__label">
+      <span class="quiz-form__capture"> введите телефон </span>
+      <div class="quiz-form__wrapper">
+        <div class="quiz-form__icon">
+          <img src="./img/quiz/icons/name.svg" alt="" />
+        </div>
+        <input
+          type="tel"
+          name="Телефон:"
+          class="quiz-form__input input-reset input-tel sec-quiz-tel"
+          placeholder="+7 (111) 111-11-11"
+        />
+      </div>
+    </label>
+    <button class="btn-reset btn quiz-form__btn">Узнать стоимость</button>
+
+    <div class="quiz__checks">
+      <label class="quiz-form__check quiz-check-3">
+        <input
+          type="checkbox"
+          class="visually-hidden"
+          name="policy-check"
+          checked
+        />
+        <div class="quiz-form__box"></div>
+        <span
+          >Я соглашаюсь на обработку персрнальных данных согласно политике
+          конфиденциальности</span
+        >
+      </label>
+      <label class="quiz-form__check quiz-check-4">
+        <input
+          type="checkbox"
+          class="visually-hidden"
+          name="policy-page-check"
+        />
+        <div class="quiz-form__box"></div>
+        <span
+          >С Политикой конфиденциальности создателя страницы ознакомлен</span
+        >
+      </label>
+    </div>
+    <div class="quiz-soc__back quiz-soc__backsoc text">
+      Выбрать другой мессенджер
+    </div>
+  </div>
+</div>

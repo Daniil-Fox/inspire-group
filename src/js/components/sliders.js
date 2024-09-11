@@ -11,6 +11,13 @@ const projSlider = new Swiper('.working__slider', {
   effect: 'fade',
   fadeEffect: {
     crossFade: true
+  },
+  navigation: {
+    prevEl: '.working-prev',
+    nextEl: '.working-next',
+  },
+  pagination: {
+    el: '.working__pagination'
   }
 })
 
@@ -116,9 +123,10 @@ window.addEventListener('DOMContentLoaded', () => {
       spaceBetween: 16,
       slidesPerView: 'auto',
       pagination: {
-        el: '.other-pagination',
+        el: '.other__pagination',
         clickable: true,
       },
+
     },
     someFunc
   );
@@ -163,10 +171,17 @@ testiContainers.forEach(cont => {
 
 
 
+const quizControl = document.querySelector('.quiz-control')
+const slidesCount = document.querySelectorAll('.quiz__slider .swiper-slide').length
+
 const quizSlider = new Swiper('.quiz__slider', {
   slidesPerView: 1,
   spaceBetween: 40,
-
+  speed: 600,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
   navigation: {
     nextEl: '.quiz-next',
     prevEl: '.quiz-prev',
@@ -177,10 +192,31 @@ const quizSlider = new Swiper('.quiz__slider', {
   },
 })
 
-const quizControl = document.querySelector('.quiz-control')
-const slidesCount = document.querySelectorAll('.quiz__slider .swiper-slide').length
+const persentage = document.querySelector('.quiz-pag__line')
+const percentageNumber = document.querySelector('.quiz-pag__ready span')
+
+function calcReady(){
+  let active = quizSlider.activeIndex + 1
+  let percentageLineWidth = persentage.clientWidth
+
+  return (active / slidesCount) * percentageLineWidth
+}
+
+function setPercentageNumber(){
+  percentageNumber.textContent = Math.floor((quizSlider.activeIndex + 1) / slidesCount * 100);
+}
+
+function setPercentage(){
+  const w = calcReady()
+  persentage.style.setProperty('--ready-perc', w + 'px')
+  setPercentageNumber()
+}
+
+
+
 
 quizSlider.on('slideChange', swiper => {
+  setPercentage()
   if(swiper.activeIndex != 0 && swiper.activeIndex != slidesCount-1){
     quizControl.classList.add('active')
   } else {

@@ -13,6 +13,30 @@
     }
   }
 
+  &__pagination {
+    position: static;
+    width: auto !important;
+
+    display: none;
+
+    @include small-tablet {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: var(--red1000);
+
+      @include small-tablet {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

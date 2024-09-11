@@ -1,7 +1,8 @@
 import { projSlider } from "./sliders.js";
 
-const accordItems = document.querySelectorAll('.w-item')
+const accordItems = document.querySelectorAll('.w-item:not(.working__item--slider)')
 accordItems[0]?.classList.add('active')
+
 function clearActive(){
   accordItems.forEach((item, i) => {
     const content = item.querySelector('.w-item__body')
@@ -23,6 +24,7 @@ accordItems.forEach((item, i) => {
     clearActive()
     let isActive = item.classList.add('active')
     content.style.maxHeight = content.scrollHeight + 'px'
+    console.log(i)
     projSlider.slideTo(i)
   })
 })

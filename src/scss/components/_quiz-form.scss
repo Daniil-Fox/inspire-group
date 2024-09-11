@@ -68,4 +68,46 @@
     justify-content: center;
     color: var(--light1000);
   }
+
+  &__check {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    input[type=checkbox]:checked+.quiz-form__box {
+      background-color: var(--grey1000);
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__box {
+    display: block;
+    flex-shrink: 0;
+    background: none;
+    border: 1px solid var(--grey1000);
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('./../img/check-white.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0;
+    }
+  }
 }
